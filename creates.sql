@@ -23,13 +23,13 @@ create table Beneficiario
 create table Correo
   (
     id_correo serial primary key,
-    mail varchar (30) primary key,
+    mail varchar (30) not null,
     id_cliente integer not null
   );
 create table Web
   (
   id_web serial primary key,
-  url varchar(30) primary key,
+  url varchar(30) not null,
   id_proveedor integer not null
 );
 create table Red_social
@@ -127,7 +127,9 @@ create table Prueba(
 );
 create table Sede(
   cod_sede serial primary key,
-  nombre_sede varchar(50) not null
+  nombre_sede varchar(50) not null,
+  id_lugar integer not null
+
 );
 create table Equipo
   (
