@@ -104,7 +104,8 @@ create table Funcion(
 create table Proveedor(
   id_proveedor serial primary key,
   nombre varchar(50) not null,
-  fechainic date not null
+  fechainic date not null,
+  id_lugar integer not null
 );
 create table Avion(
   cod_avion serial primary key,
