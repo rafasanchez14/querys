@@ -22,17 +22,20 @@ create table Beneficiario
   );
 create table Correo
   (
+    id_correo serial primary key,
     mail varchar (30) primary key,
     id_cliente integer not null
   );
 create table Web
   (
+  id_web serial primary key,
   url varchar(30) primary key,
   id_proveedor integer not null
 );
 create table Red_social
   (
-    plataforma varchar(20) primary key,
+    id_redsocial serial primary key,
+    plataforma varchar(20) not null,
     usuario varchar(20) not null,
     cod_personal integer not null
   );
