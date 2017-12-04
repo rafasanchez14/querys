@@ -5,7 +5,8 @@ foreign key (cod_material) references Material (cod_material);
 
 alter table Equipo add constraint eq_zona
 foreign key (id_zona) references Zona (id_zona);
-foreign key (cod_personal) references Personal(cod_personal);
+alter table Equipo add constraint eq_per
+foreign key (cod_personal) references Personal(id_personal);
 
 alter table Telefono add constraint tel_per
 foreign key (cod_personal) references Personal(id_personal);

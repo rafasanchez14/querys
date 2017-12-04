@@ -8,8 +8,8 @@ create table Zona
 create table Lugar
   (
     id_lugar serial primary key,
-    nombre_lugar varchar(20) not null,
-    tipo_lugar varchar(2) not null,
+    nombre_lugar varchar(100) not null,
+    tipo_lugar varchar(3) not null,
     lugar_per integer
   );
 create table Beneficiario
