@@ -285,3 +285,8 @@ create table Material_Prueba
     cod_material integer not null,
     cod_prueba integer not null
   );
+create table Estatus_Material(
+cod_estma serial primary key,
+id_status integer not null,
+cod_material integer not null
+);

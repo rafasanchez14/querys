@@ -5,6 +5,7 @@ foreign key (cod_material) references Material (cod_material);
 
 alter table Equipo add constraint eq_zona
 foreign key (id_zona) references Zona (id_zona);
+foreign key (cod_personal) references Personal(cod_personal);
 
 alter table Telefono add constraint tel_per
 foreign key (cod_personal) references Personal(id_personal);
@@ -69,3 +70,56 @@ alter table Material_Prueba add constraint mapu_mat
 foreign key (cod_material) references Material(cod_material);
 alter table Material_Prueba add constraint mapu_pru
 foreign key (cod_prueba) references Prueba(cod_prueba);
+
+alter table Estatus_Material add constraint est_ma
+foreign key (id_status) references Estatus (id_status);
+alter table Estatus_Material add constraint material
+foreign key (cod_material) references Material (cod_material);
+
+alter table Sede add constraint place
+foreign key ( id_lugar) references Lugar( id_lugar);
+
+alter table Beneficiario add constraint place
+foreign key ( id_lugar) references Lugar( id_lugar);
+alter table Beneficiario add constraint personal
+foreign key (cod_personal) references Personal( id_personal);
+
+alter table Funcion add constraint sede_funcion
+foreign key (cod_sede) references Sede(cod_sede);
+
+alter table Zona add constraint sede_zona
+foreign key (cod_sede) references Sede(cod_sede);
+
+alter table Avion add constraint modelo_avion
+foreign key (id_modelo) references Modelo( id_modelo);
+alter table Avion add constraint  Avion_ensamblaje
+foreign key (cod_ensamav) references Ensamb_Avion(cod_ensamav);
+
+alter table Personal add constraint personal_lugar
+foreign key (id_lugar) references Lugar( id_lugar);
+
+alter table Usuario add constraint usuario_rol
+foreign key (cod_rol) references Rol ( id_rol);
+
+alter table Correo add constraint cliente_correo
+foreign key ( id_cliente) references Cliente (id_cliente);
+
+alter table Web add constraint web_prov
+foreign key ( id_proveedor) references Proveedor ( id_proveedor);
+
+alter table Red_social add constraint red_personal
+foreign key (cod_personal) references Personal ( id_personal);
+
+alter table Proveedor add constraint prov_lugar
+foreign key (id_lugar) references Lugar ( id_lugar);
+
+alter table Pieza_Prueba add constraint pieza
+foreign key (cod_pieza) references Pieza( cod_pieza);
+alter table Pieza_Prueba add constraint prueba
+foreign key (cod_prueba) references Prueba ( cod_prueba);
+
+alter table Lugar add constraint fk_lugar_lugar
+foreign key (lugar_per) references Lugar(id_lugar);
+
+alter table Solicitud add constraint cliente
+foreign key (id_cliente) references Cliente(id_cliente);
