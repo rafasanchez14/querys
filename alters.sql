@@ -98,6 +98,8 @@ foreign key (cod_ensamav) references Ensamb_Avion(cod_ensamav);
 
 alter table Personal add constraint personal_lugar
 foreign key (id_lugar) references Lugar( id_lugar);
+alter table Personal add constraint personal_sede
+foreign key (cod_sede) references Sede(cod_sede);
 
 alter table Usuario add constraint usuario_rol
 foreign key (cod_rol) references Rol ( id_rol);
