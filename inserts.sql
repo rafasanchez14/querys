@@ -44,3 +44,12 @@ INSERT INTO beneficiario(
     (5, 'Miguel', 'Sandoval', 610, 5),
     (6, 'Carolina', 'Guerrero', 617, 6),
     (7, 'Luz', 'Castellano', 760, 1);
+    
+ INSERT INTO Sede(
+            nombre_sede, id_lugar)
+   VALUES 
+   ( 'Sede de Maracay ',4 ),
+   ( 'Sede de Colón ',23 ),
+   ( 'Sede de Vargas ',21 ),
+   ( 'Sede de Guatire ',14 ),
+   ( 'Sede de Valencia ',7 );
