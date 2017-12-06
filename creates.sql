@@ -49,7 +49,8 @@ create table Personal
       fechainicio date not null,
       fechafin date,
       experiencia varchar(200),
-      id_lugar integer not null
+      id_lugar integer not null,
+      cod_sede integer not null
   );
 create table Rol
   (
