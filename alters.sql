@@ -36,6 +36,8 @@ alter table Ensam_Pieza add constraint ep_pie
 foreign key (cod_pieza) references Pieza(cod_pieza);
 alter table Ensam_Pieza add constraint ep_eq
 foreign key (cod_equipo) references Equipo(cod_equipo);
+alter table Ensam_Pieza add constraint ep_in
+foreign key (cod_inv) references Inventario(cod_inv);
 
 alter table Pieza_Material add constraint pim_pie
 foreign key (cod_pieza) references Pieza(cod_pieza);
@@ -126,3 +128,8 @@ foreign key (lugar_per) references Lugar(id_lugar);
 
 alter table Solicitud add constraint cliente
 foreign key (id_cliente) references Cliente(id_cliente);
+
+alter table Inventario add constraint sede_inventario
+foreign key (cod_sede) references Sede (cod_sede);
+alter table Inventario add constraint sede_material
+foreign key (cod_material) references Material (cod_material);
