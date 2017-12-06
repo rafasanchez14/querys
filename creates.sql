@@ -84,11 +84,12 @@ create table Pieza(
 
 );
 create table Inventario(
-  cod_inv serial primary key,
-  cant int not null,
-  fechainv date not null,
-  obser varchar(80),
-  cod_material integer not null
+cod_inv serial primary key,
+cant int not null,
+fechainv date not null,
+obser varchar(80),
+cod_sede integer not null,
+cod_material integer not null
 );
 create table Material(
   cod_material serial primary key,
@@ -175,7 +176,8 @@ create table Ensam_Pieza
     fechainic date not null,
     fechafin date,
     cod_pieza integer not null,
-    cod_equipo integer not null
+    cod_equipo integer not null,
+    cod_inv integer not null
 
   );
 create table Tipo_Pago
