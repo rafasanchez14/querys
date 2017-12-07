@@ -6,7 +6,7 @@ INSERT INTO Sede(
   ( 'Sede de Vargas ',21 ),
   ( 'Sede de Guatire ',14 ),
   ( 'Sede de Valencia ',7 );
-  
+
 INSERT INTO personal(
             id_personal, nombre_personal, apellido_personal, nombre2_personal,
             apellido2_personal, fechainicio, fechafin, experiencia, id_lugar,cod_sede)
@@ -59,7 +59,17 @@ INSERT INTO beneficiario(
     (7, 'Imantec', '01-07-2015', 1669),
     (8, 'Avianca', '14-09-2015', 1795),
     (9, 'Plastimex', '22-03-2015', 1782),
-    (10, 'Charlestone', '01-01-2017', 1799);
+    (10, 'Charlestone', '01-01-2017',1799);
+    (11, 'Odebretch', '01-01-2013', 1660),
+    (12, 'Vincler', '01-03-2015', 1873),
+    (13, 'Sierra', '10-11-2015', 1629),
+    (14, 'Tumac', '01-01-2012', 1807),
+    (15, 'Corrax', '15-11-2015', 1672),
+    (16, 'Sempua', '01-05-2005', 1724),
+    (17, 'Iberia', '01-07-2015', 1669),
+    (18, 'Amertel', '14-09-2015', 1711),
+    (19, 'Supra', '22-03-2015', 1696),
+    (20, 'Collar', '01-01-2017', 1684);
 
     INSERT INTO cliente(
             id_cliente, nombre_cliente, montoac, fechaini, dni, apellido,
@@ -85,6 +95,40 @@ INSERT INTO beneficiario(
     (4, 'Prueba de Calidad','Se evalua el elemento segun sus caracteristicas'),
     (5, 'Prueba de Traslado','Se evalua el elemento despues de ser trasladado'),
     (6, 'Prueba de Embalaje','Se evalua el elemento despues de someterse a algun enbalaje');
+    (7, 'Prueba LLegada del material','Se analiza a fondo el material que es ingresado a la sede'),
+    (8, 'Prueba Resistencia','Se coloca material en camaras para probar su resistencia a la presion'),
+    (9, 'Prueba de Elasticidad','Se analiza a fondo el material que es ingresado a la sede'),
+    (10, 'Prueba de Velocidad','Se evalua el elemento segun sus caracteristicas'),
+    (11, 'Prueba de Peso','Se aplica peso al elemento'),
+    (12, 'Prueba Final','Se simulan todas en conjunto');
+    (13, 'Prueba Manipulacion','Se manipula el elemento'),
+    (14, 'Prueba de Agua','Se coloca material en camaras de agua'),
+    (15, 'Prueba de Hielo','Se reducen las temperaturas del material'),
+    (16, 'Prueba de choque','Se golpean los elementos'),
+    (17, 'Prueba de Traccion','Se mide su nivel de roce'),
+    (18, 'Prueba de Separacion','Identifica las desprendibles');
+    (19, 'Prueba de Acido','Se aplica acido al elemento');
+    (20, 'Prueba de union','Se evalua el elemento en funcion a otro');
+    (21, 'Prueba tension','Se tensan los materiales hasta su limite'),
+    (22, 'Prueba compresion','Se comprimen los materiales'),
+    (23, 'Prueba de flexion','Se evalua la flexion del material'),
+    (24, 'Prueba de dureza','Analiza la dureza del elemento'),
+    (25, 'Prueba de vencimiento','Se estima cuanto es su duracion'),
+    (26, 'Prueba de textura','Aprecia la textura del material');
+    (27, 'Prueba de penetracion','Se usan liquidos para saber la reaccion'),
+    (28, 'Prueba Resistencia','El material se somete a voltaje'),
+    (29, 'Prueba de deformacion','Informa de las deformaciones'),
+    (30, 'Prueba de resiliencia','Analiza el estado de un material luego de un evento'),
+    (31, 'Prueba de plegado','Se pliega el material'),
+    (32, 'Prueba embuticion','Se condiciona su traccion');
+    (33, 'Prueba radiologica','Se somete a rayos x'),
+    (34, 'Prueba magnetica','Se somete el elemento a imanes industriales'),
+    (35, 'Prueba de corrosion','Aplican liquidos corrosivos'),
+    (36, 'Prueba optica','Visualizacion con microscopio'),
+    (37, 'Prueba de ultrasonido','Se aplican frecuencias ultra sonicas'),
+    (38, 'Prueba de conduccion','Se somete a voltajes');
+    (39, 'Prueba de permeabilidad','Se evaluasu filtracion de agua');
+    (40, 'Prueba de vibracion','Se somete a constantes vibraciones');
 
     INSERT INTO estatus(
              id_status, nombre_status, tipo_status)
