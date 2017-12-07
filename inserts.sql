@@ -199,3 +199,26 @@ INSERT INTO beneficiario(
     (23, 'twitter', '@cwtqaa', 22),
     (24, 'Instagram', '@dpacheco', 23),
     (25, 'Instagram', '@rtorres', 24);
+    
+    INSERT into Material(
+       nombre, descrip, cant_teo)
+    VALUES 
+    ('Aluminio', 'metal no ferromagnético liviano', 200),
+    ('Cobre', 'metal de transición de color cobrizo con propiedades magneticas', 150),
+    ('Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión',100 ),
+    ('Magnesio', 'metal ligero pero considerablemente duro,de color blanco y plateado', 210),
+    ('Acero', 'aleación de metal maleable de alta conductividad eléctrica',300 ),
+    ('Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión',100),
+    ('Carbono','fibra sintética constituida por finos filamentos de 5-10μm ',200),
+    ('Hierro','metal maleable,tenaz,de color gres plateado y magnético ',200);
+    
+    INSERT INTO Inventario(
+       cant, fechainv, obser, cod_sede, cod_material)
+    VALUES 
+    ( 150,'01-09-2017','',1,2),
+    ( 100,'10-11-2017','',2,2),
+    ( 60,'10-11-2017','material delicado',3 ,3),
+    ( 200,'1-11-2017','',4,1),
+    ( 50 ,'12-10-2017','',5, 3),
+    ( 40 ,'8-10-2017' ,'',1, 7),
+    ( 150,'1-10-2017' ,'',4,4);
