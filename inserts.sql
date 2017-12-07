@@ -149,15 +149,14 @@ INSERT INTO beneficiario(
     (23, 'twitter', '@cwtqaa', 22),
     (24, 'Instagram', '@dpacheco', 23),
     (25, 'Instagram', '@rtorres', 24);
-    
-=======
-    
+
+
+
  INSERT INTO Sede(
             nombre_sede, id_lugar)
-   VALUES 
+   VALUES
    ( 'Sede de Maracay ',4 ),
    ( 'Sede de Colón ',23 ),
    ( 'Sede de Vargas ',21 ),
    ( 'Sede de Guatire ',14 ),
    ( 'Sede de Valencia ',7 );
->>>>>>> e9d6650183c76b4e3aa82dab2b2f5688a66e6cb5
