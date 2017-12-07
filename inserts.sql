@@ -38,6 +38,7 @@ INSERT INTO beneficiario(
     (5, 'Miguel', 'Sandoval', 610, 5),
     (6, 'Carolina', 'Guerrero', 617, 6),
     (7, 'Luz', 'Castellano', 760, 1);
+<<<<<<< HEAD
 
 
     INSERT INTO proveedor(
@@ -149,3 +150,14 @@ INSERT INTO beneficiario(
     (24, 'Instagram', '@dpacheco', 23),
     (25, 'Instagram', '@rtorres', 24);
     
+=======
+    
+ INSERT INTO Sede(
+            nombre_sede, id_lugar)
+   VALUES 
+   ( 'Sede de Maracay ',4 ),
+   ( 'Sede de Colón ',23 ),
+   ( 'Sede de Vargas ',21 ),
+   ( 'Sede de Guatire ',14 ),
+   ( 'Sede de Valencia ',7 );
+>>>>>>> e9d6650183c76b4e3aa82dab2b2f5688a66e6cb5
