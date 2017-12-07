@@ -1,3 +1,12 @@
+INSERT INTO Sede(
+           nombre_sede, id_lugar)
+  VALUES
+  ( 'Sede de Maracay ',4 ),
+  ( 'Sede de Colón ',23 ),
+  ( 'Sede de Vargas ',21 ),
+  ( 'Sede de Guatire ',14 ),
+  ( 'Sede de Valencia ',7 );
+  
 INSERT INTO personal(
             id_personal, nombre_personal, apellido_personal, nombre2_personal,
             apellido2_personal, fechainicio, fechafin, experiencia, id_lugar,cod_sede)
@@ -38,9 +47,6 @@ INSERT INTO beneficiario(
     (5, 'Miguel', 'Sandoval', 610, 5),
     (6, 'Carolina', 'Guerrero', 617, 6),
     (7, 'Luz', 'Castellano', 760, 1);
-<<<<<<< HEAD
-
-
     INSERT INTO proveedor(
             id_proveedor, nombre, fechainic, id_lugar)
     VALUES
@@ -112,7 +118,7 @@ INSERT INTO beneficiario(
       (7, 'www.Imantec.com', 7),
       (8, 'www.Avianca.com', 8),
       (9, 'www.Plastimex.com', 9),
-      (10, 'www.Charlestone.com',10);
+      (10, 'www.Charlestone.com',10),
       (11, 'www.Rodolfoavi.com', 1),
       (12, 'www.Metalmetal.com', 2),
       (13, 'www.telcom.net', 3),
@@ -149,14 +155,3 @@ INSERT INTO beneficiario(
     (23, 'twitter', '@cwtqaa', 22),
     (24, 'Instagram', '@dpacheco', 23),
     (25, 'Instagram', '@rtorres', 24);
-
-
-
- INSERT INTO Sede(
-            nombre_sede, id_lugar)
-   VALUES
-   ( 'Sede de Maracay ',4 ),
-   ( 'Sede de Colón ',23 ),
-   ( 'Sede de Vargas ',21 ),
-   ( 'Sede de Guatire ',14 ),
-   ( 'Sede de Valencia ',7 );
