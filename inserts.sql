@@ -80,21 +80,72 @@ INSERT INTO beneficiario(
     (6, 'Prueba de Embalaje','Se evalua el elemento despues de someterse a algun enbalaje');
 
     INSERT INTO estatus(
-            id_status, nombre_status, tipo_status)
+             id_status, nombre_status, tipo_status)
+     VALUES
+     (1, 'Solicitud recibida', 'Est construccion'),
+     (2, 'proceso de construc', 'Est construccion'),
+     (3, 'Construyendo', 'Est construccion'),
+     (4, 'Realizando ajustes', 'Est construccion'),
+     (5, 'Construida', 'Est construccion'),
+     (6, 'Solicitud fabrica', 'Est fabricacion'),
+     (7, 'En proceso ', 'Est fabricacion'),
+     (8, 'Fabricando', 'Est fabricacion'),
+     (9, 'Ajustes fab', 'Est fabricacion'),
+     (10, 'Completada', 'Est fabricacion'),
+     (11, 'Trasladando', 'Est ubicacion'),
+     (12, 'Realizando pruebas', 'Est ubicacion'),
+     (13, 'Embalando', 'Est ubicacion'),
+     (14, 'Recibido envio', 'Est ubicacion'),
+     (15, 'Despachada', 'Est ubicacion'),
+     (16, 'Finalizado', 'Est ubicacion');
+
+    INSERT INTO web(
+            id_web, url, id_proveedor)
     VALUES
-    (1, 'Solicitud recibida', 'Est construccion'),
-    (2, 'En proceso de construccion', 'Est construccion'),
-    (3, 'Construyendo', 'Est construccion'),
-    (4, 'Realizando ajustes', 'Est construccion'),
-    (5, 'Construida', 'Est construccion'),
-    (6, 'Solicitud fabrica', 'Est fabricacion'),
-    (7, 'En proceso de fabricacion', 'Est fabricacion'),
-    (8, 'Fabricando', 'Est fabricacion'),
-    (9, 'Ajustes fab', 'Est fabricacion'),
-    (10, 'Completada', 'Est fabricacion'),
-    (11, 'Trasladando', 'Est ubicacion'),
-    (12, 'Realizando pruebas', 'Est ubicacion'),
-    (13, 'Embalando', 'Est ubicacion'),
-    (14, 'Recibido envio', 'Est ubicacion'),
-    (15, 'Despachada', 'Est ubicacion'),
-    (15, 'Finalizado', 'Est ubicacion');
+      (1, 'www.Aviadores.com', 1),
+      (2, 'www.Metalurgicax.com', 2),
+      (3, 'www.Infotel.com', 3),
+      (4, 'www.Mecanes.com', 4),
+      (5, 'www.Mufasa.com', 5),
+      (6, 'www.Transven.com', 6),
+      (7, 'www.Imantec.com', 7),
+      (8, 'www.Avianca.com', 8),
+      (9, 'www.Plastimex.com', 9),
+      (10, 'www.Charlestone.com',10);
+      (11, 'www.Rodolfoavi.com', 1),
+      (12, 'www.Metalmetal.com', 2),
+      (13, 'www.telcom.net', 3),
+      (14, 'www.jljl.org', 1),
+      (15, 'www.Dispca.com', 5),
+      (16, 'www.comiven.net', 6),
+      (17, 'www.Syman.com', 7);
+
+    INSERT INTO red_social(
+            id_redsocial, plataforma, usuario, cod_personal)
+    VALUES
+    (1, 'Twitter', '@cat247', 1),
+    (2, 'Instagram', '@katykat', 1),
+    (3, 'twitter', '@lucks', 2),
+    (4, 'twitter', '@willymck', 3),
+    (5, 'Instagram','@matym', 4),
+    (6, 'twitter', '@L478a', 5),
+    (7, 'twitter', '@FutAnd', 6),
+    (8, 'twitter', '@eqare', 7),
+    (9, 'twitter', '@felipe_4', 8),
+    (10, 'twitter', '@chuchex', 9),
+    (11, 'twitter', '@Andysay', 10),
+    (12, 'Instagram', '@luxi12', 11),
+    (13, 'twitter', '@Rixty', 12),
+    (14, 'twitter', '@consi', 13),
+    (15, 'Instagram', '@ma_j66', 14),
+    (16, 'twitter', '@lucy34_1', 15),
+    (17, 'twitter', '@ert03', 16),
+    (18, 'Instagram', '@irland87', 17),
+    (19, 'Instagram', '@cbechi', 18),
+    (20, 'twitter', '@Jojose', 19),
+    (21, 'Instagram', '@mr.13', 20),
+    (22, 'twitter', '@kbenze', 21),
+    (23, 'twitter', '@cwtqaa', 22),
+    (24, 'Instagram', '@dpacheco', 23),
+    (25, 'Instagram', '@rtorres', 24);
+    
