@@ -28,12 +28,6 @@ VALUES
 (24, 'David', 'Pacheco', null, null, '14-11-2017', null, 'Mecanica automotirz', 1205,5),
 (25, 'Raul', 'Torres', null, null, '02-07-2017', null, 'Mecanica automotirz', 1347,5);
 
-
-
-
-
-
-
 INSERT INTO beneficiario(
             id_bene, nombre_bene, apelldido_bene, id_lugar, cod_personal)
     VALUES
@@ -44,3 +38,63 @@ INSERT INTO beneficiario(
     (5, 'Miguel', 'Sandoval', 610, 5),
     (6, 'Carolina', 'Guerrero', 617, 6),
     (7, 'Luz', 'Castellano', 760, 1);
+
+
+    INSERT INTO proveedor(
+            id_proveedor, nombre, fechainic, id_lugar)
+    VALUES
+    (1, 'Aviadores', '01-01-2013', 1669),
+    (2, 'Metalurgicax', '01-03-2015', 1686),
+    (3, 'Infotel', '10-11-2015', 1629),
+    (4, 'Mecanes', '01-01-2012', 1669),
+    (5, 'Mufasa', '15-11-2015', 1672),
+    (6, 'Transven', '01-05-2005', 1873),
+    (7, 'Imantec', '01-07-2015', 1669),
+    (8, 'Avianca', '14-09-2015', 1795),
+    (9, 'Plastimex', '22-03-2015', 1782),
+    (10, 'Charlestone', '01-01-2017', 1799);
+
+    INSERT INTO cliente(
+            id_cliente, nombre_cliente, montoac, fechaini, dni, apellido,
+            rif)
+    VALUES
+    (1, 'Bernardo', 45000, '06-04-2017', 4735124, 'Colina', null),
+    (2, 'Francisco', 200000, '16-03-2015', 14987324, 'Granada', null),
+    (3, 'Ilan', 897000, '11-11-2013',10333506, 'Burta', null),
+    (4, 'Gianmarco',1000000, '03-04-2016',8334761, 'Dinatale', null),
+    (5, 'Alexa', 7400, '22-05-2014', 9457147, 'Rodríguez', null),
+    (6, 'Avior', 12536000, '06-02-2006', null, null, 1476399874),
+    (7, 'Sta Barbara', 7456895, '16-02-2009', null, null, 1476399874),
+    (8, 'Tujet',324000, '06-07-2010', null, null, 1476399874),
+    (9, 'Avilon',96812, '01-12-1996', null, null, 1476399874),
+    (10, 'American', 12000000, '06-10-2004', null, null, 1476399874);
+
+    INSERT INTO prueba(
+            cod_prueba, nombre_prueb, descrip_prue)
+    VALUES
+    (1, 'Prueba LLegada del material','Se analiza a fondo el material que es ingresado a la sede'),
+    (2, 'Prueba de Presion','Se coloca material en camaras para probar su resistencia a la presion'),
+    (3, 'Prueba de Calor','Se analiza a fondo el material que es ingresado a la sede'),
+    (4, 'Prueba de Calidad','Se evalua el elemento segun sus caracteristicas'),
+    (5, 'Prueba de Traslado','Se evalua el elemento despues de ser trasladado'),
+    (6, 'Prueba de Embalaje','Se evalua el elemento despues de someterse a algun enbalaje');
+
+    INSERT INTO estatus(
+            id_status, nombre_status, tipo_status)
+    VALUES
+    (1, 'Solicitud recibida', 'Est construccion'),
+    (2, 'En proceso de construccion', 'Est construccion'),
+    (3, 'Construyendo', 'Est construccion'),
+    (4, 'Realizando ajustes', 'Est construccion'),
+    (5, 'Construida', 'Est construccion'),
+    (6, 'Solicitud fabrica', 'Est fabricacion'),
+    (7, 'En proceso de fabricacion', 'Est fabricacion'),
+    (8, 'Fabricando', 'Est fabricacion'),
+    (9, 'Ajustes fab', 'Est fabricacion'),
+    (10, 'Completada', 'Est fabricacion'),
+    (11, 'Trasladando', 'Est ubicacion'),
+    (12, 'Realizando pruebas', 'Est ubicacion'),
+    (13, 'Embalando', 'Est ubicacion'),
+    (14, 'Recibido envio', 'Est ubicacion'),
+    (15, 'Despachada', 'Est ubicacion'),
+    (15, 'Finalizado', 'Est ubicacion');
