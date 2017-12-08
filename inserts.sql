@@ -199,10 +199,10 @@ INSERT INTO beneficiario(
     (23, 'twitter', '@cwtqaa', 22),
     (24, 'Instagram', '@dpacheco', 23),
     (25, 'Instagram', '@rtorres', 24);
-    
+
     INSERT into Material(
        nombre, descrip, cant_teo)
-    VALUES 
+    VALUES
     ('Aluminio', 'metal no ferromagnético liviano', 200),
     ('Cobre', 'metal de transición de color cobrizo con propiedades magneticas', 150),
     ('Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión',100 ),
@@ -211,10 +211,10 @@ INSERT INTO beneficiario(
     ('Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión',100),
     ('Carbono','fibra sintética constituida por finos filamentos de 5-10μm ',200),
     ('Hierro','metal maleable,tenaz,de color gres plateado y magnético ',200);
-    
+
     INSERT INTO Inventario(
        cant, fechainv, obser, cod_sede, cod_material)
-    VALUES 
+    VALUES
     ( 150,'01-09-2017','',1,2),
     ( 100,'10-11-2017','',2,2),
     ( 60,'10-11-2017','material delicado',3 ,3),
@@ -222,3 +222,22 @@ INSERT INTO beneficiario(
     ( 50 ,'12-10-2017','',5, 3),
     ( 40 ,'8-10-2017' ,'',1, 7),
     ( 150,'1-10-2017' ,'',4,4);
+
+    INSERT INTO zona(
+            id_zona, nombre_zona, ubicacion_zona, cod_sede)
+    VALUES
+    (1, 'Pruebas de calidad', 'este', 1),
+    (2, 'Zona de despacho', 'norte', 2),
+    (3, 'Zona entrega', 'este', 3),
+    (4, 'Certificacion', 'este', 4),
+    (5, 'Embalaje', 'norte', 5),
+    (6, 'Zona pintura', 'sur', 1),
+    (7, 'Acabado interior', 'sur', 1),
+    (8, 'Zona entrega', 'norte', 1);
+
+    INSERT INTO public.equipo(
+            cod_equipo, cod_personal, id_zona)
+    VALUES
+    (1, 1, 1),
+    (2, 2, 1),
+    (3, 3, 1),
