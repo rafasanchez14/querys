@@ -100,7 +100,7 @@ create table Material(
 create table Funcion(
   id_funcion serial primary key,
   nombref varchar(50) not null,
-  descrf varchar(80),
+  descrf varchar(200),
   cod_sede integer not null
 );
 create table Proveedor(
