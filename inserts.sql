@@ -346,3 +346,91 @@ INSERT INTO beneficiario(
     (6, 'empleado08', 'empleado1234',6),
     (7, 'proveedor08', 'proveedor1234',7);
     (7, 'frank', 'frank1234',6);
+
+    INSERT INTO modelo(
+                   id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+                   longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+                   ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+                   volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+                   maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+           VALUES
+
+  (1,
+  'AU802',6,118,76,43.7,28.60,28.30,11.30,25,3.76,4.01,3.54,2.20,
+  28.12,49.19,45.00,18.40,1.99,10.70,0.74,0.82,1.86,17.86,
+  'Pratt & whitney JT8D-7',84.5,17.21,1.12,3.20);
+
+  INSERT INTO modelo(
+              id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+              longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+              ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+              volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+              maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+      VALUES
+
+  (2,'AU802A',6,168,76,43.7,36.50,28.90,11.10,25,3.76,4.01,3.54,2.20,
+  33.20,68.05,56.25,38.90,2.54,11.30,0.74,0.82,2.16,23.17,
+  'CFM International 56-3B-2',98,21.92,1.52,2.36);
+
+
+
+  INSERT INTO modelo(
+              id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+              longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+              ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+              volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+              maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+      VALUES
+
+  (3,'AU802B', 6,132,76,43.7,31.10,28.90,11.10,25,3.76,4.01,
+    3.54,2.20,31.30,60.550,50.00,23.30,2.47,11.30,0.74,
+  0.82,2.40,23.80,'CFM  56-3B-1',821.80,1.52,2.36);
+
+
+  INSERT INTO modelo(
+              id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+              longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+              ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+              volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+              maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+      VALUES
+  (4,'AU802C',6,132,76,43.7,31.20,35.70,12.60,25,3.76,4.01,3.54,2.20,
+  36.38,66.00,55.00,21.40,2.40,12.50,0.78,0.82,3.05,
+  26.02,'CFM  56-7B20',91.6,23.18,1.55,2.51);
+
+  INSERT INTO modelo(
+              id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+              longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+              ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+              volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+              maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+
+
+  VALUES
+  (5,'AU802D',6,149,76,43.7,33.60,35.70,12.50,25.02,3.76,4.01,3.54,2.20,
+  38.15,70.00,58.60,27.30,2.48,12.50,0.78,0.82,3.36,
+  26.02,'CFM  56-7B26',116.0,23.18,1.55,2.51);
+
+  INSERT INTO modelo(
+              id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+              longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+              ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+              volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+              maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+      VALUES
+
+  (6, 'AU802E',6,189,76,43.7,39.50,35.70,12.50,25.02,
+    3.76,4.01,3.54,2.20,41.41,79.00,66.35,45.1,2.45,
+    12.50,0.78,0.82,3.06,26.02,
+  'CFM  56-7B27',121.4,24.38,1.55,2.51);
+
+    INSERT INTO modelo(
+                id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
+                longitud, envergadura, altura, flecha_alar, an_fuselaje, alto_fuselaje,
+                ancho_cabina, alto_cabina, peso_vacio, peso_maxd, peso_maxa,
+                volumenca, cardespegue, techoserv, velo_crucero, velomax, alcancemax,
+                maxcomb, motor, empujemax, empuje, diame_ala, long_motor)
+        VALUES
+    (7,'AU802F',6,215,71,43.7,42.10,35.70,12.50,25.02,3.76,4.01,3.54,2.20,
+    44.67,85.10,66.35,52.5,2.45,12.50,0.78,0.82,2.70,29.66,
+    'CFM  56-7',121.4,24.38,1.55,2.51);
