@@ -1,11 +1,11 @@
 INSERT INTO Sede(
-           nombre_sede, id_lugar)
+           cod_sede,nombre_sede, id_lugar)
   VALUES
-  ( 'Sede de Maracay ',4 ),
-  ( 'Sede de Colón ',23 ),
-  ( 'Sede de Vargas ',21 ),
-  ( 'Sede de Guatire ',14 ),
-  ( 'Sede de Valencia ',7 );
+  (1, 'Sede de Maracay ',4 ),
+  ( 2,'Sede de Colón ',23 ),
+  ( 3,'Sede de Vargas ',21 ),
+  ( 4,'Sede de Guatire ',14 ),
+  ( 5,'Sede de Valencia ',7 );
 
 INSERT INTO personal(
             id_personal, nombre_personal, apellido_personal, nombre2_personal,
@@ -59,7 +59,7 @@ INSERT INTO beneficiario(
     (7, 'Imantec', '01-07-2015', 1669),
     (8, 'Avianca', '14-09-2015', 1795),
     (9, 'Plastimex', '22-03-2015', 1782),
-    (10, 'Charlestone', '01-01-2017',1799);
+    (10, 'Charlestone', '01-01-2017',1799),
     (11, 'Odebretch', '01-01-2013', 1660),
     (12, 'Vincler', '01-03-2015', 1873),
     (13, 'Sierra', '10-11-2015', 1629),
@@ -94,40 +94,40 @@ INSERT INTO beneficiario(
     (3, 'Prueba de Calor','Se analiza a fondo el material que es ingresado a la sede'),
     (4, 'Prueba de Calidad','Se evalua el elemento segun sus caracteristicas'),
     (5, 'Prueba de Traslado','Se evalua el elemento despues de ser trasladado'),
-    (6, 'Prueba de Embalaje','Se evalua el elemento despues de someterse a algun enbalaje');
+    (6, 'Prueba de Embalaje','Se evalua el elemento despues de someterse a algun enbalaje'),
     (7, 'Prueba LLegada del material','Se analiza a fondo el material que es ingresado a la sede'),
     (8, 'Prueba Resistencia','Se coloca material en camaras para probar su resistencia a la presion'),
     (9, 'Prueba de Elasticidad','Se analiza a fondo el material que es ingresado a la sede'),
     (10, 'Prueba de Velocidad','Se evalua el elemento segun sus caracteristicas'),
     (11, 'Prueba de Peso','Se aplica peso al elemento'),
-    (12, 'Prueba Final','Se simulan todas en conjunto');
+    (12, 'Prueba Final','Se simulan todas en conjunto'),
     (13, 'Prueba Manipulacion','Se manipula el elemento'),
     (14, 'Prueba de Agua','Se coloca material en camaras de agua'),
     (15, 'Prueba de Hielo','Se reducen las temperaturas del material'),
     (16, 'Prueba de choque','Se golpean los elementos'),
     (17, 'Prueba de Traccion','Se mide su nivel de roce'),
-    (18, 'Prueba de Separacion','Identifica las desprendibles');
-    (19, 'Prueba de Acido','Se aplica acido al elemento');
-    (20, 'Prueba de union','Se evalua el elemento en funcion a otro');
+    (18, 'Prueba de Separacion','Identifica las desprendibles'),
+    (19, 'Prueba de Acido','Se aplica acido al elemento'),
+    (20, 'Prueba de union','Se evalua el elemento en funcion a otro'),
     (21, 'Prueba tension','Se tensan los materiales hasta su limite'),
     (22, 'Prueba compresion','Se comprimen los materiales'),
     (23, 'Prueba de flexion','Se evalua la flexion del material'),
     (24, 'Prueba de dureza','Analiza la dureza del elemento'),
     (25, 'Prueba de vencimiento','Se estima cuanto es su duracion'),
-    (26, 'Prueba de textura','Aprecia la textura del material');
+    (26, 'Prueba de textura','Aprecia la textura del material'),
     (27, 'Prueba de penetracion','Se usan liquidos para saber la reaccion'),
     (28, 'Prueba Resistencia','El material se somete a voltaje'),
     (29, 'Prueba de deformacion','Informa de las deformaciones'),
     (30, 'Prueba de resiliencia','Analiza el estado de un material luego de un evento'),
     (31, 'Prueba de plegado','Se pliega el material'),
-    (32, 'Prueba embuticion','Se condiciona su traccion');
+    (32, 'Prueba embuticion','Se condiciona su traccion'),
     (33, 'Prueba radiologica','Se somete a rayos x'),
     (34, 'Prueba magnetica','Se somete el elemento a imanes industriales'),
     (35, 'Prueba de corrosion','Aplican liquidos corrosivos'),
     (36, 'Prueba optica','Visualizacion con microscopio'),
     (37, 'Prueba de ultrasonido','Se aplican frecuencias ultra sonicas'),
-    (38, 'Prueba de conduccion','Se somete a voltajes');
-    (39, 'Prueba de permeabilidad','Se evaluasu filtracion de agua');
+    (38, 'Prueba de conduccion','Se somete a voltajes'),
+    (39, 'Prueba de permeabilidad','Se evaluasu filtracion de agua'),
     (40, 'Prueba de vibracion','Se somete a constantes vibraciones');
 
     INSERT INTO estatus(
@@ -201,16 +201,16 @@ INSERT INTO beneficiario(
     (25, 'Instagram', '@rtorres', 24);
 
     INSERT into Material(
-       nombre, descrip, cant_teo)
+      cod_material, nombre, descrip, cant_teo)
     VALUES
-    ('Aluminio', 'metal no ferromagnético liviano', 200),
-    ('Cobre', 'metal de transición de color cobrizo con propiedades magneticas', 150),
-    ('Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión',100 ),
-    ('Magnesio', 'metal ligero pero considerablemente duro,de color blanco y plateado', 210),
-    ('Acero', 'aleación de metal maleable de alta conductividad eléctrica',300 ),
-    ('Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión',100),
-    ('Carbono','fibra sintética constituida por finos filamentos de 5-10μm ',200),
-    ('Hierro','metal maleable,tenaz,de color gres plateado y magnético ',200);
+    (1,'Aluminio', 'metal no ferromagnético liviano', 200),
+    (2,'Cobre', 'metal de transición de color cobrizo con propiedades magneticas', 150),
+    (3,'Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión',100 ),
+    (4,'Magnesio', 'metal ligero pero considerablemente duro,de color blanco y plateado', 210),
+    (5,'Acero', 'aleación de metal maleable de alta conductividad eléctrica',300 ),
+    (6,'Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión',100),
+    (7,'Carbono','fibra sintética constituida por finos filamentos de 5-10μm ',200),
+    (8,'Hierro','metal maleable,tenaz,de color gres plateado y magnético ',200);
 
     INSERT INTO Inventario(
        cant, fechainv, obser, cod_sede, cod_material)
@@ -235,9 +235,57 @@ INSERT INTO beneficiario(
     (7, 'Acabado interior', 'sur', 1),
     (8, 'Zona entrega', 'norte', 1);
 
-    INSERT INTO public.equipo(
+    INSERT INTO equipo(
             cod_equipo, cod_personal, id_zona)
     VALUES
     (1, 1, 1),
     (2, 2, 1),
     (3, 3, 1),
+    (4, 4, 1),
+    (5, 5, 1),
+    (6, 6, 2),
+    (7, 7, 2),
+    (8, 8, 2),
+    (9, 9, 2),
+    (10, 10, 2);
+
+    INSERT INTO correo(
+            id_correo, mail, id_cliente)
+    VALUES
+    (1, 'bercolina@outlook.com', 1),
+    (2, 'fgranada14@gmail.com', 2),
+    (3, 'Franky1408@hotmail.com', 2),
+    (4, 'Ilanburta_t@gmail.com', 3),
+    (5, 'gianmarco.1995@yahoo.es', 4),
+    (6, 'alexa10@gmail.com', 5),
+    (7, 'ventas@avior.com', 6),
+    (8, 'ventas@stabarbara.com', 7),
+    (9, 'tujet@hotmail.com', 8),
+    (10,'avilonsales@gmail.com',9),
+    (11,'vuelosamerican@american.com',10);
+
+    INSERT INTO telefono(
+            cod_telf, cod_area, numerotelf,
+            cod_personal, id_proveedor, id_bene,
+            id_cliente)
+    VALUES
+    (1, 0212, 4576414, null, null, null, 1),
+    (2, 0212, 9433543, null, null, null, 2),
+    (3, 0241, 7615423, null, null, null, 3),
+    (4, 0212, 8187742, null, null, null, 4),
+    (5, 0212, 9458147, null, null, null, 5),
+    (6, 0212, 5843232, null, null, 1, null),
+    (7, 0259, 9024545, null, null, 2, null),
+    (8, 0212, 7689911, null, null, 3, null),
+    (9, 0212, 2321796, null, null, 4, null),
+    (10, 0212, 3479865, null, null, 5, null),
+    (11, 0412, 1028888, null, 1, null, null),
+    (12, 0274, 9438572, null, 2, null, null),
+    (13, 0212, 9795621, null, 3, null, null),
+    (14, 0212, 2031108, null, 4, null, null),
+    (15, 0212, 6041129, null, 5, null, null),
+    (16, 0212, 6247878, 1, null, null, null),
+    (17, 0245, 4016807, 2, null, null, null),
+    (18, 0212, 9621547, 3, null, null, null),
+    (19, 0261, 7432424, 4, null, null, null),
+    (20, 0281, 6423698, 5, null, null, null);
