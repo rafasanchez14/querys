@@ -345,3 +345,4 @@ INSERT INTO beneficiario(
     (5, 'guest', 'guest1234',5),
     (6, 'empleado08', 'empleado1234',6),
     (7, 'proveedor08', 'proveedor1234',7);
+    (7, 'frank', 'frank1234',6);
