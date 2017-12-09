@@ -434,3 +434,46 @@ INSERT INTO beneficiario(
     (7,'AU802F',6,215,71,43.7,42.10,35.70,12.50,25.02,3.76,4.01,3.54,2.20,
     44.67,85.10,66.35,52.5,2.45,12.50,0.78,0.82,2.70,29.66,
     'CFM  56-7',121.4,24.38,1.55,2.51);
+
+    INSERT INTO privilegio(
+            id_privilegio, nombre_tabla, crear, consultar, actualizar, borrar)
+    VALUES
+    (1, 'Funcion', 1, 1, 1, 1);
+    (2, 'Sede', 1, 1, 1, 1);
+    (3, 'Zona', 1, 1, 1, 1);
+    (4, 'Lugar', 1, 1, 1, 1);
+    (5, 'Personal', 1, 1, 1, 1);
+    (6, 'Equipo', 1, 1, 1, 1);
+    (7, 'Telefono', 1, 1, 1, 1);
+    (8, 'Red Social', 1, 1, 1, 1);
+    (9, 'Rol', 1, 1, 1, 1);
+    (10, 'Proveedor', 1, 1, 1, 1);
+    (11, 'Privilegio', 1, 1, 1, 1);
+    (12, 'Rol_Priv', 1, 1, 1, 1);
+    (13, 'Usuario', 1, 1, 1, 1);
+    (14, 'Beneficiario', 1, 1, 1, 1);
+    (15, 'Web', 1, 1, 1, 1);
+    (16, 'Proveedor_Material', 1, 1, 1, 1);
+    (17, 'Material', 1, 1, 1, 1);
+    (18, 'Inventario', 1, 1, 1, 1);
+    (19, 'Orden_compra', 1, 1, 1, 1);
+    (20, 'Pago', 1, 1, 1, 1);
+    (21, 'Ensam_Pieza', 1, 1, 1, 1);
+    (22, 'Tipo_Pago', 1, 1, 1, 1);
+    (23, 'Correo', 1, 1, 1, 1);
+    (24, 'Estatus', 1, 1, 1, 1);
+    (25, 'Cliente', 1, 1, 1, 1);
+    (26, 'Avion', 1, 1, 1, 1);
+    (27, 'Material_Prueba', 1, 1, 1, 1);
+    (28, 'Prueba', 1, 1, 1, 1);
+    (29, 'Solicitud', 1, 1, 1, 1);
+    (30, 'Modelo', 1, 1, 1, 1);
+    (31, 'Pieza_prueba', 1, 1, 1, 1);
+    (32, 'Pieza_mat', 1, 1, 1, 1);
+    (33, 'Avion_Pieza', 1, 1, 1, 1);
+    (34, 'Funcion', 1, 1, 1, 1);
+    (35, 'Estatus_Pieza', 1, 1, 1, 1);
+    (36, 'Pieza_Pieza', 1, 1, 1, 1);
+    (37, 'Pieza', 1, 1, 1, 1);
+    (38, 'Modelo_Pieza', 1, 1, 1, 1);
+    (39, 'Ensamb_Avion', 1, 1, 1, 1);
