@@ -67,8 +67,11 @@ create table Usuario
 create table Privilegio
   (
     id_privilegio serial primary key,
-    nombre_privilegio serial
-
+    nombre_tabla varchar not null,
+    crear integer,
+    consultar integer,
+    actualizar integer,
+    borrar integer
   );
 create table Solicitud
   (
