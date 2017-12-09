@@ -212,12 +212,15 @@ create table Estatus
   );
 create table Modelo(
     id_modelo serial primary key,
+    nombre_modelo varchar(50) not null,
     tripulacion integer,
     capacidad integer,
     dist_as numeric(10,2),
     ancho_as numeric(10,2),
     longitud numeric(10,2),
     envergadura numeric(10,2),
+    altura numeric(10,2),
+    flecha_alar numeric(10,2),
     an_fuselaje numeric(10,2),
     alto_fuselaje numeric(10,2),
     ancho_cabina numeric(10,2),
@@ -233,6 +236,7 @@ create table Modelo(
     alcancemax numeric(10,2),
     maxcomb numeric(10,2),
     motor varchar(80),
+    empujemax numeric(10,2),
     empuje numeric(10,2),
     diame_ala numeric(10,2),
     long_motor numeric(10,2)
