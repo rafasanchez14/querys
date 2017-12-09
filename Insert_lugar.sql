@@ -1,4 +1,4 @@
-﻿INSERT INTO Lugar (id_lugar, nombre_lugar,tipo_lugar,lugar_per) VALUES
+INSERT INTO Lugar (id_lugar, nombre_lugar,tipo_lugar,lugar_per) VALUES
 ( 1626, '﻿Afganistan',  'pa',null),
 ( 1627  ,'Akrotiri',  'pa',null),
 ( 1628  ,'Albania',  'pa',null),
