@@ -146,10 +146,10 @@ create table Telefono
   cod_telf serial primary key,
     cod_area integer not null,
     numerotelf integer not null,
-    cod_personal integer not null,
-    id_proveedor integer not null,
-    id_bene integer not null,
-    id_cliente integer not null
+    cod_personal integer,
+    id_proveedor integer,
+    id_bene integer ,
+    id_cliente integer 
   );
 create table Rol_Priv
   (
