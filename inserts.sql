@@ -289,3 +289,20 @@ INSERT INTO beneficiario(
     (18, 0212, 9621547, 3, null, null, null),
     (19, 0261, 7432424, 4, null, null, null),
     (20, 0281, 6423698, 5, null, null, null);
+    
+    INSERT INTO Funcion(
+           nombref, descrf, cod_sede)
+    VALUES 
+    ('Fabricación de superficies de sustentación','utilizadas para obtener fuerza de reacción cuando se encuentra en movimiento' , 1), 
+    ('Fabricación de fuselajes', 'realiza la conexión entre las alas y los estabilizadores', 2),
+    ('Fabricación de componentes motopropulsores', 'contrarrestar la resistencia aerodinámica',3 ),
+    ('Fabricación de superficies de control', 'son parte de las configuraciones del ala', 1),
+    ('Fabricación de alerones', 'superficies moviles que permiten al avión girar', 1),
+    ('Fabricación de flaps','superficies usadas para el despegue y aterrizaje',1),
+    ('Fabricación de spoilers','reducen la sustentación generada por el ala',1),
+    ('Fabricación de slats','generan contrapeso cuando las alas comienzan a generar sustentación',1),
+    ('Fabricación de estabilizadores','alas que generan la estabilidad del avión segun su tipo',1),
+    ('Fabricación de intrumentos de control','utilizados para obtener los parametros de vuelo principales asi como el estado del avión',4),
+    ('Fabricación de elementos internos de cabina','conforman todos los elementos internos del avión',5);
+
+
