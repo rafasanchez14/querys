@@ -114,9 +114,8 @@ create table Proveedor(
 );
 create table Avion(
   cod_avion serial primary key,
-  nombre varchar(50)not null,
   id_modelo integer not null,
-  cod_ensamav integer not null
+  nro_solicitud integer not null
 
 );
 create table Orden_compra(
