@@ -187,7 +187,7 @@ create table Tipo_Pago
   (
   id_tipopago serial primary key,
   nombre_pago varchar(20),
-  nro_tarjeta integer,
+  nro_tarjeta bigint,
   fecha_venci date,
   titular varchar(40),
   tipotdc varchar(20),
@@ -266,6 +266,7 @@ create table Estatus_Pieza
   );
 create table Pieza_Pieza
     (
+      codpieza_pieza serial primary key,
       usada_pieza integer not null,
       generada_pieza integer not null
     );
