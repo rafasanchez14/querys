@@ -344,8 +344,8 @@ INSERT INTO beneficiario(
     (4, 'cliente08', 'cliente1234',4),
     (5, 'guest', 'guest1234',5),
     (6, 'empleado08', 'empleado1234',6),
-    (7, 'proveedor08', 'proveedor1234',7);
-    (7, 'frank', 'frank1234',6);
+    (7, 'proveedor08', 'proveedor1234',7),
+    (8, 'frank', 'frank1234',6);
 
     INSERT INTO modelo(
                    id_modelo, nombre_modelo, tripulacion, capacidad, dist_as, ancho_as,
@@ -384,7 +384,7 @@ INSERT INTO beneficiario(
 
   (3,'AU802B', 6,132,76,43.7,31.10,28.90,11.10,25,3.76,4.01,
     3.54,2.20,31.30,60.550,50.00,23.30,2.47,11.30,0.74,
-  0.82,2.40,23.80,'CFM  56-3B-1',821.80,1.52,2.36);
+  0.82,2.40,23.80,'CFM  56-3B-1',89,21.80,1.52,2.36);
 
 
   INSERT INTO modelo(
@@ -438,44 +438,44 @@ INSERT INTO beneficiario(
     INSERT INTO privilegio(
             id_privilegio, nombre_tabla, crear, consultar, actualizar, borrar)
     VALUES
-    (1, 'Funcion', 1, 1, 1, 1);
-    (2, 'Sede', 1, 1, 1, 1);
-    (3, 'Zona', 1, 1, 1, 1);
-    (4, 'Lugar', 1, 1, 1, 1);
-    (5, 'Personal', 1, 1, 1, 1);
-    (6, 'Equipo', 1, 1, 1, 1);
-    (7, 'Telefono', 1, 1, 1, 1);
-    (8, 'Red Social', 1, 1, 1, 1);
-    (9, 'Rol', 1, 1, 1, 1);
-    (10, 'Proveedor', 1, 1, 1, 1);
-    (11, 'Privilegio', 1, 1, 1, 1);
-    (12, 'Rol_Priv', 1, 1, 1, 1);
-    (13, 'Usuario', 1, 1, 1, 1);
-    (14, 'Beneficiario', 1, 1, 1, 1);
-    (15, 'Web', 1, 1, 1, 1);
-    (16, 'Proveedor_Material', 1, 1, 1, 1);
-    (17, 'Material', 1, 1, 1, 1);
-    (18, 'Inventario', 1, 1, 1, 1);
-    (19, 'Orden_compra', 1, 1, 1, 1);
-    (20, 'Pago', 1, 1, 1, 1);
-    (21, 'Ensam_Pieza', 1, 1, 1, 1);
-    (22, 'Tipo_Pago', 1, 1, 1, 1);
-    (23, 'Correo', 1, 1, 1, 1);
-    (24, 'Estatus', 1, 1, 1, 1);
-    (25, 'Cliente', 1, 1, 1, 1);
-    (26, 'Avion', 1, 1, 1, 1);
-    (27, 'Material_Prueba', 1, 1, 1, 1);
-    (28, 'Prueba', 1, 1, 1, 1);
-    (29, 'Solicitud', 1, 1, 1, 1);
-    (30, 'Modelo', 1, 1, 1, 1);
-    (31, 'Pieza_prueba', 1, 1, 1, 1);
-    (32, 'Pieza_mat', 1, 1, 1, 1);
-    (33, 'Avion_Pieza', 1, 1, 1, 1);
-    (34, 'Funcion', 1, 1, 1, 1);
-    (35, 'Estatus_Pieza', 1, 1, 1, 1);
-    (36, 'Pieza_Pieza', 1, 1, 1, 1);
-    (37, 'Pieza', 1, 1, 1, 1);
-    (38, 'Modelo_Pieza', 1, 1, 1, 1);
+    (1, 'Funcion', 1, 1, 1, 1),
+    (2, 'Sede', 1, 1, 1, 1),
+    (3, 'Zona', 1, 1, 1, 1),
+    (4, 'Lugar', 1, 1, 1, 1),
+    (5, 'Personal', 1, 1, 1, 1),
+    (6, 'Equipo', 1, 1, 1, 1),
+    (7, 'Telefono', 1, 1, 1, 1),
+    (8, 'Red Social', 1, 1, 1, 1),
+    (9, 'Rol', 1, 1, 1, 1),
+    (10, 'Proveedor', 1, 1, 1, 1),
+    (11, 'Privilegio', 1, 1, 1, 1),
+    (12, 'Rol_Priv', 1, 1, 1, 1),
+    (13, 'Usuario', 1, 1, 1, 1),
+    (14, 'Beneficiario', 1, 1, 1, 1),
+    (15, 'Web', 1, 1, 1, 1),
+    (16, 'Proveedor_Material', 1, 1, 1, 1),
+    (17, 'Material', 1, 1, 1, 1),
+    (18, 'Inventario', 1, 1, 1, 1),
+    (19, 'Orden_compra', 1, 1, 1, 1),
+    (20, 'Pago', 1, 1, 1, 1),
+    (21, 'Ensam_Pieza', 1, 1, 1, 1),
+    (22, 'Tipo_Pago', 1, 1, 1, 1),
+    (23, 'Correo', 1, 1, 1, 1),
+    (24, 'Estatus', 1, 1, 1, 1),
+    (25, 'Cliente', 1, 1, 1, 1),
+    (26, 'Avion', 1, 1, 1, 1),
+    (27, 'Material_Prueba', 1, 1, 1, 1),
+    (28, 'Prueba', 1, 1, 1, 1),
+    (29, 'Solicitud', 1, 1, 1, 1),
+    (30, 'Modelo', 1, 1, 1, 1),
+    (31, 'Pieza_prueba', 1, 1, 1, 1),
+    (32, 'Pieza_mat', 1, 1, 1, 1),
+    (33, 'Avion_Pieza', 1, 1, 1, 1),
+    (34, 'Funcion', 1, 1, 1, 1),
+    (35, 'Estatus_Pieza', 1, 1, 1, 1),
+    (36, 'Pieza_Pieza', 1, 1, 1, 1),
+    (37, 'Pieza', 1, 1, 1, 1),
+    (38, 'Modelo_Pieza', 1, 1, 1, 1),
     (39, 'Ensamb_Avion', 1, 1, 1, 1);
 
     INSERT INTO orden_compra(
