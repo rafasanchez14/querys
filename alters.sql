@@ -96,7 +96,7 @@ foreign key (cod_sede) references Sede(cod_sede);
 alter table Avion add constraint modelo_avion
 foreign key (id_modelo) references Modelo( id_modelo);
 alter table Avion add constraint  Avion_ensamblaje
-foreign key (cod_ensamav) references Ensamb_Avion(cod_ensamav);
+foreign key (nro_solicitud) references Solicitud(nro_solicitud);
 
 alter table Personal add constraint personal_lugar
 foreign key (id_lugar) references Lugar( id_lugar);
