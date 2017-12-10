@@ -633,4 +633,19 @@ INSERT INTO beneficiario(
  ('Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
  ('Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
  ('Spoiler','destruye la sustentación del ala'),
- ('Spoiler-aerofreno','elimina la sustentación del ala');
+ ('Spoiler-aerofreno','elimina la sustentación del ala'),
+ ( 'Ala', 'componente esencial para la capacidad de sustentación del avión');
+ 
+ INSERT INTO Pieza_Pieza(
+	usada_pieza, generada_pieza)
+ VALUES 
+ ( 1, 11),
+ ( 2, 11),
+ ( 3, 11),
+ ( 4, 11),
+ ( 5, 11),
+ ( 6, 11),
+ ( 7, 11),
+ ( 8, 11),
+ ( 9, 11),
+ ( 10,11);
