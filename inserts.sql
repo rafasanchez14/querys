@@ -620,10 +620,10 @@ INSERT INTO beneficiario(
   ( 118 ,'10-10-2015',null, 20 , 3 ),
   ( 119 ,'10-10-2015',null, 20 , 4 ),
   ( 120 ,'10-10-2015',null, 20 , 5 );
-  
+
   INSERT INTO Pieza(
 	   nombre_pieza, desc_pieza)
-  VALUES 
+  VALUES
  ('Aleron de baja velocidad', 'controla el giro del avión a bajo mach '),
  ('Aleron de alta velocidad', 'controla el giro del avión a mach de crucero'),
  ('punta de ala', 'reduce la resistencia inducida del ala'),
@@ -635,10 +635,10 @@ INSERT INTO beneficiario(
  ('Spoiler','destruye la sustentación del ala'),
  ('Spoiler-aerofreno','elimina la sustentación del ala'),
  ( 'Ala', 'componente esencial para la capacidad de sustentación del avión');
- 
+
  INSERT INTO Pieza_Pieza(
 	usada_pieza, generada_pieza)
- VALUES 
+ VALUES
  ( 1, 11),
  ( 2, 11),
  ( 3, 11),
@@ -649,3 +649,51 @@ INSERT INTO beneficiario(
  ( 8, 11),
  ( 9, 11),
  ( 10,11);
+
+ INSERT INTO tipo_pago(
+           id_tipopago,
+           nombre_pago, nro_tarjeta,
+           fecha_venci, titular,
+           tipotdc, cod_seg, titular_cheque,
+           nrotrans, banco, titular_transf)
+   VALUES
+       (1, 'transferencia',null, null, null,
+     null, null, null, 45789147, 'provincial', 'Jose aquino'),
+       (2, 'transferencia',null, null, null,
+       null, null, null, 257899, 'Bank of America', 'Avior CA'),
+       (3, 'transferencia',null, null, null,
+         null, null, null, 45789147, 'bbva', 'Infotel ac'),
+       (4, 'transferencia',null, null, null,
+           null, null, null, 146877, 'bod', 'company'),
+       (5, 'tdc',58952436369, '10-07-2019', 'Diosdado Cabello',
+             'visa', 532, null, null, null, null),
+       (6, 'tdc',193752020, '10-08-2018', 'Ernest Clark',
+                   'master', 742, null, null, null, null),
+       (7, 'tdc',7349696074, '10-08-2020', 'Richard delios',
+       'American express', 336, null, null, null, null),
+       (8, 'tdc',624107821, '10-08-2019', 'company',
+       'American express', 108, null, null, null, null),
+       (9, 'tdc',67783451, '10-08-2019', 'oncoprt',
+       'American express', 220, null, null, null, null),
+       (10, 'tdc',624107821, '10-08-2019', 'company',
+       'American express', 108, null, null, null, null),
+       (11, 'transferencia',null, null, null,
+     null, null, null, 1136894, 'Banesco', 'Inversiones nac'),
+       (12, 'transferencia',null, null, null,
+   null, null, null, 35687771, 'Banesco', 'Alexa tommy'),
+     (13, 'efectivo',null, null, 'Jose Perez',
+     null, null, null, null, null, null),
+     (14, 'efectivo',null, null, 'Ignacio Andrade',
+     null, null, null, null, null, null),
+     (15, 'efectivo',null, null, 'Luca Lanza',
+     null, null, null, null, null, null),
+     (16, 'efectivo',null, null, 'Jhon Green',
+     null, null, null, null, null, null),
+     (17, 'cheque',null, null, 'Pablo Mota',
+     null, null, 514253, null, null, null),
+     (18, 'cheque',null, null,'Robert Camo',
+     null, null, 47821, null, null, null),
+     (19, 'cheque',null, null,'Alexa sam',
+     null, null, 896341, null, null, null),
+     (20, 'cheque',null, null, 'Andres portillo',
+     null, null, 151520, null, null, null);
