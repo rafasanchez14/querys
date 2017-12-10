@@ -620,3 +620,17 @@ INSERT INTO beneficiario(
   ( 118 ,'10-10-2015',null, 20 , 3 ),
   ( 119 ,'10-10-2015',null, 20 , 4 ),
   ( 120 ,'10-10-2015',null, 20 , 5 );
+  
+  INSERT INTO Pieza(
+	   nombre_pieza, desc_pieza)
+  VALUES 
+ ('Aleron de baja velocidad', 'controla el giro del avión a bajo mach '),
+ ('Aleron de alta velocidad', 'controla el giro del avión a mach de crucero'),
+ ('punta de ala', 'reduce la resistencia inducida del ala'),
+ ('Carenado del flap', 'reduce la velocidad minima del avión durante el despegue o aterrizaje'),
+ ('Flap Krueger', 'reduce la velocidad del avión'),
+ ('Slat','utilizado para reducir la velocidad del avión'),
+ ('Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
+ ('Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
+ ('Spoiler','destruye la sustentación del ala'),
+ ('Spoiler-aerofreno','elimina la sustentación del ala');
