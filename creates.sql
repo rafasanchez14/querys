@@ -266,6 +266,7 @@ create table Estatus_Pieza
   );
 create table Pieza_Pieza
     (
+      codpieza_pieza serial primary key,
       usada_pieza integer not null,
       generada_pieza integer not null
     );
