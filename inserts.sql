@@ -622,19 +622,19 @@ INSERT INTO beneficiario(
   ( 120 ,'10-10-2015',null, 20 , 5 );
 
   INSERT INTO Pieza(
-	   nombre_pieza, desc_pieza)
+	   cod_pieza, nombre_pieza, desc_pieza)
   VALUES
- ('Aleron de baja velocidad', 'controla el giro del avión a bajo mach '),
- ('Aleron de alta velocidad', 'controla el giro del avión a mach de crucero'),
- ('punta de ala', 'reduce la resistencia inducida del ala'),
- ('Carenado del flap', 'reduce la velocidad minima del avión durante el despegue o aterrizaje'),
- ('Flap Krueger', 'reduce la velocidad del avión'),
- ('Slat','utilizado para reducir la velocidad del avión'),
- ('Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
- ('Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
- ('Spoiler','destruye la sustentación del ala'),
- ('Spoiler-aerofreno','elimina la sustentación del ala'),
- ( 'Ala', 'componente esencial para la capacidad de sustentación del avión');
+ (1,'Aleron de baja velocidad', 'controla el giro del avión a bajo mach '),
+ (2,'Aleron de alta velocidad', 'controla el giro del avión a mach de crucero'),
+ (3,'punta de ala', 'reduce la resistencia inducida del ala'),
+ (4,'Carenado del flap', 'reduce la velocidad minima del avión durante el despegue o aterrizaje'),
+ (5,'Flap Krueger', 'reduce la velocidad del avión'),
+ (6,'Slat','utilizado para reducir la velocidad del avión'),
+ (7,'Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
+ (8,'Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
+ (9,'Spoiler','destruye la sustentación del ala'),
+ (10,'Spoiler-aerofreno','elimina la sustentación del ala'),
+ (11, 'Ala', 'componente esencial para la capacidad de sustentación del avión');
 
  INSERT INTO Pieza_Pieza(
 	usada_pieza, generada_pieza)
@@ -924,9 +924,9 @@ INSERT INTO beneficiario(
     (10, '05-07-2017', null, 6),
     (11, '03-05-2017', null, 7),
     (12, '05-06-2017', null, 8),
-    (10, '05-09-2017', null, 8),
-    (11, '05-05-2015', null, 9),
-    (12, '10-10-2016', null, 10);
+    (13, '05-09-2017', null, 8),
+    (14, '05-05-2015', null, 9),
+    (15, '10-10-2016', null, 10);
     INSERT INTO avion(
             cod_avion, id_modelo, nro_solicitud)
     VALUES
@@ -943,7 +943,7 @@ INSERT INTO beneficiario(
     (11, 5, 11),
     (12, 2, 12);
 
-    INSERT INTO public.proveedor_material(
+    INSERT INTO proveedor_material(
             id_pvm, id_proveedor, cod_material)
     VALUES
     (1, 1, 1),
@@ -965,8 +965,8 @@ INSERT INTO beneficiario(
     (17, 17, 7),
     (18, 18, 5),
     (19, 19, 6),
-    (20, 20, 4),
-    INSERT INTO public.rol_priv(
+    (20, 20, 4);
+    INSERT INTO rol_priv(
             id_rp, cod_rol, id_privilegio)
     VALUES
   ( 1 ,1 , 1 ),
