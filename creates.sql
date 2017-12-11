@@ -260,7 +260,7 @@ create table Pieza_Material
 create table Estatus_Pieza
   (
     cod_piezastat serial primary key,
-    cod_pieza integer not null,
+    cod_avionpi integer not null,
     id_status integer not null
   );
 create table Pieza_Pieza
