@@ -1047,3 +1047,17 @@ INSERT INTO beneficiario(
   ( 76 ,2 , 37 ),
   ( 77 ,2 , 38 ),
   ( 78 ,2 , 39 );
+
+INSERT INTO Pieza_Material(
+       cod_pieza, cod_material)
+VALUES 
+( 11, 1),
+( 11, 7),
+( 1, 1),
+( 6, 7),
+( 9, 1),
+( 5, 1),
+( 2, 7),
+( 11, 5),
+( 3, 6),
+( 6, 6);
