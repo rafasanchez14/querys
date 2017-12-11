@@ -45,7 +45,7 @@ alter table Pieza_Material add constraint pim_mat
 foreign key (cod_material) references Material(cod_material);
 
 alter table Estatus_Pieza add constraint ep_pi
-foreign key (cod_pieza) references Pieza(cod_pieza);
+foreign key (cod_avionpi) references Avion_Pieza(cod_avionpi);
 alter table Estatus_Pieza add constraint ep_st
 foreign key (id_status) references Estatus(id_status);
 
