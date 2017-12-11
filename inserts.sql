@@ -1076,4 +1076,18 @@ VALUES
 ( 6, 1),
 ( 10,1);
 
+INSERT INTO Estatus_Pieza(
+       cod_avionpi, id_status)
+VALUES 
+( 1, 2),
+( 2, 5),
+( 3, 7),
+( 4, 8),
+( 5, 1),
+( 6 ,8),
+( 7 ,9),
+( 8 ,1),
+( 9 ,13),
+(10, 16);
+
 
