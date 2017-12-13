@@ -204,7 +204,8 @@ create table Cliente
   fechaini date,
   dni integer unique,
   apellido varchar(20),
-  rif integer
+  rif integer,
+  id_lugar integer not null
   );
 create table Estatus
   (
