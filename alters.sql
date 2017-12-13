@@ -133,3 +133,6 @@ alter table Inventario add constraint sede_inventario
 foreign key (cod_sede) references Sede (cod_sede);
 alter table Inventario add constraint sede_material
 foreign key (cod_material) references Material (cod_material);
+
+alter table Cliente add constraint cli_lugar
+foreign key (id_lugar) references Lugar ( id_lugar);
