@@ -108,9 +108,13 @@ foreign key (cod_rol) references Rol ( id_rol);
 
 alter table Correo add constraint cliente_correo
 foreign key ( id_cliente) references Cliente (id_cliente);
+alter table Correo add constraint correo_prov
+foreign key ( id_proveedor) references Proveedor ( id_proveedor);
 
 alter table Web add constraint web_prov
 foreign key ( id_proveedor) references Proveedor ( id_proveedor);
+alter table Web add constraint cliente_web
+foreign key ( id_cliente) references Cliente (id_cliente);
 
 alter table Red_social add constraint red_personal
 foreign key (cod_personal) references Personal ( id_personal);
