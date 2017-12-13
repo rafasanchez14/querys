@@ -151,25 +151,39 @@ INSERT INTO beneficiario(
      (16, 'Finalizado', 'Est ubicacion');
 
     INSERT INTO web(
-            id_web, url, id_proveedor)
+            id_web, url, id_proveedor, id_cliente)
     VALUES
-      (1, 'www.Aviadores.com', 1),
-      (2, 'www.Metalurgicax.com', 2),
-      (3, 'www.Infotel.com', 3),
-      (4, 'www.Mecanes.com', 4),
-      (5, 'www.Mufasa.com', 5),
-      (6, 'www.Transven.com', 6),
-      (7, 'www.Imantec.com', 7),
-      (8, 'www.Avianca.com', 8),
-      (9, 'www.Plastimex.com', 9),
-      (10, 'www.Charlestone.com',10),
-      (11, 'www.Rodolfoavi.com', 1),
-      (12, 'www.Metalmetal.com', 2),
-      (13, 'www.telcom.net', 3),
-      (14, 'www.jljl.org', 1),
-      (15, 'www.Dispca.com', 5),
-      (16, 'www.comiven.net', 6),
-      (17, 'www.Syman.com', 7);
+      (1, 'www.Aviadores.com', 1,null),
+      (2, 'www.Metalurgicax.com', 2,null),
+      (3, 'www.Infotel.com', 3,null),
+      (4, 'www.Mecanes.com', 4,null),
+      (5, 'www.Mufasa.com', 5,null),
+      (6, 'www.Transven.com', 6,null),
+      (7, 'www.Imantec.com', 7,null),
+      (8, 'www.Avianca.com', 8,null),
+      (9, 'www.Plastimex.com', 9,null),
+      (10, 'www.Charlestone.com',10,null),
+      (11, 'www.Rodolfoavi.com', 1,null),
+      (12, 'www.Metalmetal.com', 2,null),
+      (13, 'www.telcom.net', 3,null),
+      (14, 'www.jljl.org', 1,null),
+      (15, 'www.Dispca.com', 5,null),
+      (16, 'www.comiven.net', 6,null),
+      (17, 'www.Syman.com', 7,null),
+      (18, 'www.derades.com',  null,1),
+      (19, 'www.bulios.com',  null,2),
+      (20, 'www.fullo.com',  null,3),
+      (21, 'www.aajjoo.com', null,4),
+      (22, 'www.loapsd.com',  null,5),
+      (23, 'www.intrea.com',  null,6),
+      (24, 'www.2evvyt.net',  null,7),
+      (25, 'www.fiuem.org',  null,8),
+      (26, 'www.hulao.com',  null,9),
+      (27, 'www.sshhww.net',  null,10),
+      (29, 'www.bwera.com',  null,1),
+      (30, 'www.intuts.com',  null,1),
+      (31, 'www.gulss.com',  null,2),
+      (32, 'www.suoery.com',  null,2);
 
     INSERT INTO red_social(
             id_redsocial, plataforma, usuario, cod_personal)
@@ -250,19 +264,19 @@ INSERT INTO beneficiario(
     (10, 10, 2);
 
     INSERT INTO correo(
-            id_correo, mail, id_cliente)
+            id_correo, mail, id_cliente,id_proveedor)
     VALUES
-    (1, 'bercolina@outlook.com', 1),
-    (2, 'fgranada14@gmail.com', 2),
-    (3, 'Franky1408@hotmail.com', 2),
-    (4, 'Ilanburta_t@gmail.com', 3),
-    (5, 'gianmarco.1995@yahoo.es', 4),
-    (6, 'alexa10@gmail.com', 5),
-    (7, 'ventas@avior.com', 6),
-    (8, 'ventas@stabarbara.com', 7),
-    (9, 'tujet@hotmail.com', 8),
-    (10,'avilonsales@gmail.com',9),
-    (11,'vuelosamerican@american.com',10);
+    (1, 'bercolina@outlook.com', 1,null),
+    (2, 'fgranada14@gmail.com', 2,null),
+    (3, 'Franky1408@hotmail.com', 2,null),
+    (4, 'Ilanburta_t@gmail.com', 3,null),
+    (5, 'gianmarco.1995@yahoo.es', 4,null),
+    (6, 'alexa10@gmail.com', 5,null),
+    (7, 'ventas@avior.com', 6,null),
+    (8, 'ventas@stabarbara.com', 7,null),
+    (9, 'tujet@hotmail.com', 8,null),
+    (10,'avilonsales@gmail.com',9,null),
+    (11,'vuelosamerican@american.com',10,null);
 
     INSERT INTO telefono(
             cod_telf, cod_area, numerotelf,
@@ -1050,7 +1064,7 @@ INSERT INTO beneficiario(
 
 INSERT INTO Pieza_Material(
        cod_pieza, cod_material)
-VALUES 
+VALUES
 ( 11, 1),
 ( 11, 7),
 ( 1, 1),
@@ -1064,7 +1078,7 @@ VALUES
 
 INSERT INTO Avion_Pieza(
        cod_pieza, cod_avion)
-VALUES 
+VALUES
 ( 2, 1),
 ( 3, 2),
 ( 4, 3),
@@ -1078,7 +1092,7 @@ VALUES
 
 INSERT INTO Estatus_Pieza(
        cod_avionpi, id_status)
-VALUES 
+VALUES
 ( 1, 2),
 ( 2, 5),
 ( 3, 7),
@@ -1089,5 +1103,3 @@ VALUES
 ( 8 ,1),
 ( 9 ,13),
 (10, 16);
-
-
