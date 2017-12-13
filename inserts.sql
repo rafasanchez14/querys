@@ -73,18 +73,18 @@ INSERT INTO beneficiario(
 
     INSERT INTO cliente(
             id_cliente, nombre_cliente, montoac, fechaini, dni, apellido,
-            rif)
+            rif,id_lugar)
     VALUES
-    (1, 'Bernardo', 45000, '06-04-2017', 4735124, 'Colina', null),
-    (2, 'Francisco', 200000, '16-03-2015', 14987324, 'Granada', null),
-    (3, 'Ilan', 897000, '11-11-2013',10333506, 'Burta', null),
-    (4, 'Gianmarco',1000000, '03-04-2016',8334761, 'Dinatale', null),
-    (5, 'Alexa', 7400, '22-05-2014', 9457147, 'Rodríguez', null),
-    (6, 'Avior', 12536000, '06-02-2006', null, null, 1476399874),
-    (7, 'Sta Barbara', 7456895, '16-02-2009', null, null, 1476399874),
-    (8, 'Tujet',324000, '06-07-2010', null, null, 1476399874),
-    (9, 'Avilon',96812, '01-12-1996', null, null, 1476399874),
-    (10, 'American', 12000000, '06-10-2004', null, null, 1476399874);
+    (1, 'Bernardo', 45000, '06-04-2017', 4735124, 'Colina', null,539),
+    (2, 'Francisco', 200000, '16-03-2015', 14987324, 'Granada', null,530),
+    (3, 'Ilan', 897000, '11-11-2013',10333506, 'Burta', null,563),
+    (4, 'Gianmarco',1000000, '03-04-2016',8334761, 'Dinatale', null,588),
+    (5, 'Alexa', 7400, '22-05-2014', 9457147, 'Rodríguez', null,589),
+    (6, 'Avior', 12536000, '06-02-2006', null, null, 1476399874,714),
+    (7, 'Sta Barbara', 7456895, '16-02-2009', null, null, 1476399874,719),
+    (8, 'Tujet',324000, '06-07-2010', null, null, 1476399874,734),
+    (9, 'Avilon',96812, '01-12-1996', null, null, 1476399874,867),
+    (10, 'American', 12000000, '06-10-2004', null, null, 1476399874,1101);
 
     INSERT INTO prueba(
             cod_prueba, nombre_prueb, descrip_prue)
