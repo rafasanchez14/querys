@@ -24,13 +24,16 @@ create table Correo
   (
     id_correo serial primary key,
     mail varchar (30) not null,
-    id_cliente integer not null
+    id_cliente integer,
+    id_proveedor integer
+
   );
 create table Web
   (
   id_web serial primary key,
   url varchar(30) not null,
-  id_proveedor integer not null
+  id_proveedor integer,
+  id_cliente integer
 );
 create table Red_social
   (
