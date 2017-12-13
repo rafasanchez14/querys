@@ -1047,3 +1047,47 @@ INSERT INTO beneficiario(
   ( 76 ,2 , 37 ),
   ( 77 ,2 , 38 ),
   ( 78 ,2 , 39 );
+
+INSERT INTO Pieza_Material(
+       cod_pieza, cod_material)
+VALUES 
+( 11, 1),
+( 11, 7),
+( 1, 1),
+( 6, 7),
+( 9, 1),
+( 5, 1),
+( 2, 7),
+( 11, 5),
+( 3, 6),
+( 6, 6);
+
+INSERT INTO Avion_Pieza(
+       cod_pieza, cod_avion)
+VALUES 
+( 2, 1),
+( 3, 2),
+( 4, 3),
+( 1, 4),
+( 2, 6),
+( 5, 1),
+( 4, 4),
+( 3, 1),
+( 6, 1),
+( 10,1);
+
+INSERT INTO Estatus_Pieza(
+       cod_avionpi, id_status)
+VALUES 
+( 1, 2),
+( 2, 5),
+( 3, 7),
+( 4, 8),
+( 5, 1),
+( 6 ,8),
+( 7 ,9),
+( 8 ,1),
+( 9 ,13),
+(10, 16);
+
+
