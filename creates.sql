@@ -298,6 +298,7 @@ create table Material_Prueba
     fechaini date not null,
     fechafin date,
     cod_material integer not null,
+    id_zona integer not null,
     cod_prueba integer not null
   );
 create table Estatus_Material(
