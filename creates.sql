@@ -49,6 +49,7 @@ create table Personal
       apellido_personal varchar(20) not null,
       nombre2_personal varchar(20),
       apellido2_personal varchar(20),
+      titulacion varchar(20),
       fechainicio date not null,
       fechafin date,
       experiencia varchar(200),
