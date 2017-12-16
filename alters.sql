@@ -112,6 +112,8 @@ alter table Correo add constraint cliente_correo
 foreign key ( id_cliente) references Cliente (id_cliente);
 alter table Correo add constraint correo_prov
 foreign key ( id_proveedor) references Proveedor ( id_proveedor);
+alter table Correo add constraint per_correo
+foreign key (cod_personal) references Personal( id_personal);
 
 alter table Web add constraint web_prov
 foreign key ( id_proveedor) references Proveedor ( id_proveedor);
