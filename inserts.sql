@@ -216,15 +216,15 @@ INSERT INTO beneficiario(
 
     INSERT into Material(
       cod_material, nombre, descrip, cant_teo)
-    VALUES
-    (1,'Aluminio', 'metal no ferromagnético liviano', 200),
-    (2,'Cobre', 'metal de transición de color cobrizo con propiedades magneticas', 150),
-    (3,'Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión',100 ),
-    (4,'Magnesio', 'metal ligero pero considerablemente duro,de color blanco y plateado', 210),
-    (5,'Acero', 'aleación de metal maleable de alta conductividad eléctrica',300 ),
-    (6,'Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión',100),
-    (7,'Carbono','fibra sintética constituida por finos filamentos de 5-10μm ',200),
-    (8,'Hierro','metal maleable,tenaz,de color gres plateado y magnético ',200);
+      VALUES
+      (1,'Aluminio', 'metal no ferromagnético liviano'),
+      (2,'Cobre', 'metal de transición de color cobrizo con propiedades magneticas'),
+      (3,'Zinc', 'metal de color gris,maleable con propiedades de resistir corrosión'),
+      (4,'Magnesio', 'metal ligero pero considerablemente duro,de color blanco y plateado'),
+      (5,'Acero', 'aleación de metal maleable de alta conductividad eléctrica'),
+      (6,'Titanio','metal de color gris oscuro, de gran dureza resistente a la corrosión'),
+      (7,'Carbono','fibra sintética constituida por finos filamentos de 5-10μm' ),
+      (8,'Hierro','metal maleable,tenaz,de color gres plateado y magnético ');
 
     INSERT INTO Inventario(
        cant, fechainv, obser, cod_sede, cod_material)
