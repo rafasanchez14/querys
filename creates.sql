@@ -100,8 +100,7 @@ cod_material integer not null
 create table Material(
   cod_material serial primary key,
   nombre varchar(50) not null,
-  descrip varchar (80) not null,
-  cant_teo int not null
+  descrip varchar (80) not null
 );
 create table Funcion(
   id_funcion serial primary key,
