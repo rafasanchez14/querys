@@ -25,6 +25,7 @@ create table Correo
     id_correo serial primary key,
     mail varchar (30) not null,
     id_cliente integer,
+    cod_personal integer,
     id_proveedor integer
 
   );
