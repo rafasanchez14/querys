@@ -128,6 +128,7 @@ create table Orden_compra(
   fecha date not null,
   observ varchar(80),
   id_proveedor integer not null,
+  cantidad integer not null,
   cod_material integer not null
 );
 create table Prueba(
