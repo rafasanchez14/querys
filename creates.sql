@@ -129,6 +129,7 @@ create table Orden_compra(
   observ varchar(80),
   id_proveedor integer not null,
   cantidad integer not null,
+  estatus varchar(80),
   cod_material integer not null
 );
 create table Prueba(
@@ -169,6 +170,7 @@ create table Proveedor_Material
   (
     id_pvm serial primary key,
     id_proveedor integer not null,
+    precio numeric(10,2),
     cod_material integer not null
   );
 create table Pago
@@ -303,8 +305,8 @@ create table Material_Prueba
     id_zona integer not null,
     cod_prueba integer not null
   );
-create table Estatus_Material(
+create table Estatus_Prueba(
 cod_estma serial primary key,
 id_status integer not null,
-cod_material integer not null
+cod_prueba integer not null
 );
