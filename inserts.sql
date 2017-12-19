@@ -1203,3 +1203,38 @@ VALUES
 ( 8 ,1),
 ( 9 ,13),
 (10, 16);
+
+INSERT INTO ensam_pieza(
+            cod_ensampi, fechainic, fechafin, cod_pieza, cod_equipo, cod_inv)
+    VALUES
+    (1, '10-10-2010', '10-10-2012', 1, 1, 1),
+    (2, '10-10-2010', '10-10-2012', 2, 2, 2),
+    (3, '10-10-2010', '10-10-2012', 3, 3, 3),
+    (4, '10-10-2010', '10-10-2012', 4, 4, 4),
+    (5, '10-10-2010', '10-10-2012', 5, 5, 5);
+
+    INSERT INTO pieza_prueba(
+                cod_piezapru, cod_pieza, cod_prueba)
+        VALUES
+        (1, 1, 1),
+        (2, 2, 2),
+        (3, 3, 3),
+        (4, 4, 4),
+        (5, 5, 5);
+
+        INSERT INTO ensamb_avion(
+            cod_ensamav, cod_ensampi, cod_avion)
+            VALUES
+            (1, 1, 1),
+            (2, 2, 2),
+            (3, 3, 3),
+            (4, 4, 4),
+            (5, 5, 5);
+            INSERT INTO modelo_pieza(
+            cod_modpi, cod_pieza, id_modelo)
+    VALUES
+    (1, 1, 1),
+    (2, 2, 2),
+    (3, 3, 3),
+    (4, 4, 4),
+    (5, 5, 5);
