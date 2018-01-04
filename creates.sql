@@ -257,7 +257,6 @@ create table Pieza_prueba
     cod_piezapru serial primary key,
     cod_pieza integer not null,
     cod_prueba integer not null
-
   );
 create table Pieza_Material
     (
