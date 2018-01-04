@@ -146,3 +146,4 @@ foreign key (cod_material) references Material (cod_material);
 
 alter table Cliente add constraint cli_lugar
 foreign key (id_lugar) references Lugar ( id_lugar);
+

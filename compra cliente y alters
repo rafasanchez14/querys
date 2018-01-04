@@ -1,0 +1,31 @@
+create table Orden_compra_cliente(
+  id_orden_cliente serial primary key,
+  fecha date not null,
+  observ varchar(80),
+  id_cliente integer not null,
+  cod_avion integer not null,
+  cantidad integer not null
+);
+
+create table Pago_Avion (
+id_pago_avion serial primary key,
+monto numeric(10,2),
+id_orden_cliente integer not null,
+id_tipopago integer not null
+);
+
+// Alters
+
+Alter table Orden_compra_cliente
+Add constraint fk_cliente foreign key (id_cliente)references Cliente(id_cliente);
+Alter table Orden_compra_cliente
+Add constraint fk_avion foreign key (cod_avion)references Avion(cod_avion);
+
+Alter table Pago_Avion
+Add constraint fk_orden_avion foreign key (id_orden_cliente)references Orden_compra_cliente (id_orden_cliente );
+Alter table Pago_Avion
+Add constraint fk_tipo_pago foreign key (id_tipopago)references Tipo_pago (id_tipopago);
+
+
+
+
