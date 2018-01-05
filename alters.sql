@@ -63,6 +63,8 @@ alter table Ensamb_Avion add constraint ea_ens
 foreign key (cod_ensampi) references Ensam_Pieza(cod_ensampi);
 alter table Ensamb_Avion add constraint ea_avi
 foreign key (cod_avion) references Avion(cod_avion);
+alter table Ensamb_Avion add constraint ea_es
+foreign key (id_status) references Estatus(id_status);
 
 alter table Avion_Pieza add constraint avpi_pi
 foreign key (cod_pieza) references Pieza(cod_pieza);

@@ -288,6 +288,9 @@ create table Ensamb_Avion
   (
     cod_ensamav serial primary key,
     cod_ensampi integer not null,
+    fechaini date,
+    fechafin date,
+    id_status integer,
     cod_avion integer not null
   );
 create table Avion_Pieza
