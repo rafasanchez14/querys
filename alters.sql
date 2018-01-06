@@ -77,6 +77,8 @@ alter table Material_Prueba add constraint mapu_pru
 foreign key (cod_prueba) references Prueba(cod_prueba);
 alter table Material_Prueba  add constraint mp_zona
 foreign key (id_zona) references Zona (id_zona);
+alter table Material_Prueba  add constraint mp_est
+foreign key (cod_status) references Estatus (id_status);
 
 alter table Estatus_Prueba add constraint est_ma
 foreign key (id_status) references Estatus (id_status);
