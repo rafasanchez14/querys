@@ -148,7 +148,8 @@ INSERT INTO beneficiario(
      (13, 'Embalando', 'Est ubicacion'),
      (14, 'Recibido envio', 'Est ubicacion'),
      (15, 'Despachada', 'Est ubicacion'),
-     (16, 'Finalizado', 'Est ubicacion');
+     (16, 'Finalizado', 'Est ubicacion'),
+     (17, 'No satisfactorio', 'Est Material');
 
     INSERT INTO web(
             id_web, url, id_proveedor, id_cliente)
