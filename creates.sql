@@ -305,7 +305,8 @@ create table Material_Prueba
     fechafin date,
     cod_material integer not null,
     id_zona integer not null,
-    cod_prueba integer not null
+    cod_prueba integer not null,
+    cod_status integer not null
   );
 create table Estatus_Prueba(
 cod_estma serial primary key,
