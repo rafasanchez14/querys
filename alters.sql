@@ -134,6 +134,12 @@ alter table Pieza_Prueba add constraint pieza
 foreign key (cod_pieza) references Pieza( cod_pieza);
 alter table Pieza_Prueba add constraint prueba
 foreign key (cod_prueba) references Prueba ( cod_prueba);
+alter table Pieza_Prueba add constraint Estatus
+foreign key (cod_prueba) references Estatus ( id_status);
+alter table Pieza_Prueba add constraint solicitud
+foreign key (cod_prueba) references Solicitud ( nro_solicitud);
+
+
 
 alter table Lugar add constraint fk_lugar_lugar
 foreign key (lugar_per) references Lugar(id_lugar);
