@@ -752,6 +752,11 @@ INSERT INTO beneficiario(
  (9,'Spoiler','destruye la sustentación del ala'),
  (10,'Spoiler-aerofreno','elimina la sustentación del ala'),
  (11, 'Ala', 'componente esencial para la capacidad de sustentación del avión');
+ (12,'Flecha ', 'tipo de ala usado en el avion '),
+ (13,'Ojival ', 'tipo de ala usado en el avion '),
+ (14,'Delta ', 'tipo de ala usado en el avion ');
+
+
 
  INSERT INTO Pieza_Pieza(
 	usada_pieza, generada_pieza)
