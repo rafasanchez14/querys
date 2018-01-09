@@ -149,3 +149,13 @@ foreign key (cod_material) references Material (cod_material);
 alter table Cliente add constraint cli_lugar
 foreign key (id_lugar) references Lugar ( id_lugar);
 
+Alter table Orden_compra_cliente
+Add constraint fk_cliente foreign key (id_cliente)references Cliente(id_cliente);
+Alter table Orden_compra_cliente
+Add constraint fk_avion foreign key (cod_avion)references Avion(cod_avion);
+
+Alter table Pago_Avion
+Add constraint fk_orden_avion foreign key (id_orden_cliente)references Orden_compra_cliente (id_orden_cliente );
+Alter table Pago_Avion
+Add constraint fk_tipo_pago foreign key (id_tipopago)references Tipo_pago (id_tipopago);
+
