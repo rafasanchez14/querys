@@ -316,3 +316,22 @@ cod_estma serial primary key,
 id_status integer not null,
 cod_prueba integer not null
 );
+
+create table Orden_compra_cliente(
+  id_orden_cliente serial primary key,
+  fecha date not null,
+  observ varchar(80),
+  id_cliente integer not null,
+  cod_avion integer not null,
+  cantidad integer not null
+);
+
+create table Pago_Avion (
+id_pago_avion serial primary key,
+monto numeric(10,2),
+id_orden_cliente integer not null,
+id_tipopago integer not null
+);
+
+
+
