@@ -1330,14 +1330,19 @@ INSERT INTO ensam_pieza(
     (9, '10-10-2010', '10-10-2012', 4, 4, 3),
     (10, '10-10-2010', '10-10-2012',5, 5, 5);
 
-    INSERT INTO pieza_prueba(
-                cod_piezapru, cod_pieza, cod_prueba)
+   INSERT INTO pieza_prueba(
+                cod_piezapru, cod_pieza,cod_solicitud,id_estatus, cod_prueba)
         VALUES
-        (1, 1, 1),
-        (2, 2, 2),
-        (3, 3, 3),
-        (4, 4, 4),
-        (5, 5, 5);
+        (1, 1, 1,17 ,1),
+        (2, 2, 2,17  ,2),
+        (3, 3, 3, 17 ,3),
+        (4, 4, 4, 10  ,5),
+        (5, 5, 5, 10  ,6),
+        (6, 6, 6, 10  ,7),
+        (7, 7, 7, 10  ,8),
+        (8, 8, 8, 17  ,9),
+        (9, 9, 9, 10  ,10),
+        (10,10,10, 10 ,11);
 
 
         INSERT INTO ensamb_avion(
