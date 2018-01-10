@@ -738,23 +738,49 @@ INSERT INTO beneficiario(
      , 306 ),
     ( 120 ,'10-10-2015',null, 20 , 5 , 251 );
 
-  INSERT INTO Pieza(
-	   cod_pieza, nombre_pieza, desc_pieza)
-  VALUES
- (1,'Aleron de baja velocidad', 'controla el giro del avión a bajo mach '),
- (2,'Aleron de alta velocidad', 'controla el giro del avión a mach de crucero'),
- (3,'punta de ala', 'reduce la resistencia inducida del ala'),
- (4,'Carenado del flap', 'reduce la velocidad minima del avión durante el despegue o aterrizaje'),
- (5,'Flap Krueger', 'reduce la velocidad del avión'),
- (6,'Slat','utilizado para reducir la velocidad del avión'),
- (7,'Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
- (8,'Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
- (9,'Spoiler','destruye la sustentación del ala'),
- (10,'Spoiler-aerofreno','elimina la sustentación del ala'),
- (11, 'Ala', 'componente esencial para la capacidad de sustentación del avión');
- (12,'Flecha ', 'tipo de ala usado en el avion '),
- (13,'Ojival ', 'tipo de ala usado en el avion '),
- (14,'Delta ', 'tipo de ala usado en el avion ');
+INSERT INTO Pieza(
+   cod_pieza, nombre_pieza, desc_pieza)
+VALUES
+(1,'Aleron de baja velocidad', 'se encargar de controlar el movimiento de balance en vuelo del avión, mediante una deflexión de manera asimétrica
+(un alerón hacia arriba y otro hacia abajo) se consigue que el avión gire sobre su eje longitudinal. Es de esta forma por la que el
+avión realiza giros laterales sin consumir una cantidad elevada de combustible y en un espacio reducido. Existen dos alerones en
+el ala: controla el giro del avión a bajo mach '),
+(2,'Aleron de alta velocidad', ' se encargar de controlar el movimiento de balance en vuelo del avión, mediante una deflexión de manera asimétrica
+(un alerón hacia arriba y otro hacia abajo) se consigue que el avión gire sobre su eje longitudinal. Es de esta forma por la que el
+avión realiza giros laterales sin consumir una cantidad elevada de combustible y en un espacio reducido. Existen dos alerones en
+el ala: controla el giro del avión a mach de crucero'),
+(3,'punta de ala','formas geométricas instaladas en el extremo del ala, su misión es reducir la resistencia inducida del ala ya que
+evita la conexión entre intradós y el extradós.'),
+(4,'carenado flaps','una cubierta externa cuya principal función consiste en reducir la resistencia al aire. Cubre las zonas de la aeronave donde potencialmente se pueda producir mayor resistencia que en otras,1​ aunque muchos modelos de aeronave están en realidad enteramente carenados.
+Estas estructuras se presentan generalmente como cubiertas ligeras que además de reducir la resistencia al avance, también proveen protección a los componentes internos que cubren.'),
+(5,'Flap Krueger', 'es un ingenio aerodinámico diseñado para aumentar la sustentación, en determinadas fases del vuelo de una aeronave. Su fin es aumentar la cuerda aerodinámica y la curvatura del perfil alar,
+  modificando la geometría del perfil de tal modo que la velocidad de entrada en pérdida durante fases concretas del vuelo, como el aterrizaje o el despegue se reduzca de modo significativo,
+ permitiendo un vuelo más lento que el de crucero. El dispositivo se inactiva replegándose de uno u otro modo durante el vuelo normal de crucero.'),
+(6,'Slat','Situados en el borde de ataque del ala, son dispositivos móviles que crean una ranura entre el borde de ataque del ala y el resto del plano.
+ A medida que el ángulo de ataque aumenta, el aire de alta presión situado
+ en la zona inferior del ala trata de llegar a la parte superior del ala,
+ dando energía de esta manera al aire en la parte superior y por tanto aumentando el
+ máximo ángulo de ataque que el avión puede alcanzar. Es un mecanismo de soplado que aporta cantidad de movimiento a la capa límite ayudando a vencer el gradiente adverso de presiones;
+ así se retrasa el desprendimiento de la corriente con respecto al aumento del ángulo de ataque.'),
+(7,'Flap de 3 partes interior','utilizado para el despegue y aterrizaje del avión'),
+(8,'Flap de 3 partes exterior','cumple la misma mision del flap de la parte interior'),
+(9,'Spoiler','destruye la sustentación del ala'),
+(10,'Spoiler-aerofreno','es un dispositivo que busca reducir la fuerza de sustentación de una aeronave. Los spoilers son placas montadas en la cara
+ superior de las alas de un avión (extradós), que pueden desplegarse hacia arriba modificando el flujo laminar
+«echándolo a perder» (spoil; en inglés, ‘echar a perder’).
+Con esto, el spoiler provoca una entrada en pérdida controlada sobre
+la porción del ala situada tras él, reduciendo notablemente la sustentación y aumentando la resistencia.'),
+(11, 'Ala', ' ala a un cuerpo aerodinámico formado por una estructura muy fuerte estructuralmente, compuesta por un perfil aerodinámico o perfil alar envolviendo a uno o más largueros y
+ que es capaz de generar una diferencia de presiones entre su cara superior (extradós)
+y su cara inferior (intradós) al desplazarse por el aire lo que produce
+la fuerza ascendente de sustentación que mantiene al avión en vuelo.
+El ala típica también utiliza el principio de acción y reacción generando una fuerza cuya componente vertical contrarresta al peso. En el caso particular de
+las alas para aviones supersónicos, el diseño está orientado a usar sólo este efecto de la "reacción" y se evita la sustentación
+aerodinámica. El ala compensará por tanto el peso del avión y a su vez generará una resistencia.'),
+(12,'Flecha ', 'El ala en flecha es una configuración alar común en los aviones de alta velocidad. La forma más común de ala en flecha es con los extremos de estas dirigidos atrás, en vez de formar un ángulo recto con el fuselaje'),
+(13,'Ojival ', 'tipo de ala usado en el avion '),
+(14,'Delta ', 'tipo de ala usado en el avion ');
+
 
 
 
@@ -818,7 +844,7 @@ INSERT INTO beneficiario(
      (19, 'cheque',null, null,'Alexa sam',
      null, null, 896341, null, null, null),
      (20, 'cheque',null, null, 'Andres portillo',
-     null, null, 151520, null, null, null);
+     null, null, 151520, null, null, null),
      (21, 'transferencia',null, null, null,
          null, null, null, 534597, 'provincial', 'Ismael Guerra'),
      (22, 'transferencia',null, null, null,
@@ -860,54 +886,7 @@ INSERT INTO beneficiario(
      (40, 'cheque',null, null, 'Hector Porras',
          null, null, 14213, null, null, null);
 
-     INSERT INTO tipo_pago(
-               id_tipopago,
-               nombre_pago, nro_tarjeta,
-               fecha_venci, titular,
-               tipotdc, cod_seg, titular_cheque,
-               nrotrans, banco, titular_transf)
-       VALUES
-           (21, 'transferencia',null, null, null,
-         null, null, null, 534597, 'provincial', 'Ismael Guerra'),
-           (22, 'transferencia',null, null, null,
-           null, null, null, 1223657, 'Bank of America', 'Metalca'),
-           (23, 'transferencia',null, null, null,
-             null, null, null, 243433, 'bbva', 'Inca'),
-           (24, 'transferencia',null, null, null,
-               null, null, null, 43877, 'bod', 'mexac'),
-           (25, 'tdc',5562436369, '10-07-2019', 'Luis Reyes',
-                 'visa', 532, null, null, null, null),
-           (26, 'tdc',55026522560, '10-08-2018', 'Samy Sep',
-                       'master', 742, null, null, null, null),
-           (27, 'tdc',879696074, '10-08-2020', 'Greg thom',
-           'American express', 336, null, null, null, null),
-           (28, 'tdc',6107821, '10-08-2019', 'century',
-           'American express', 108, null, null, null, null),
-           (29, 'tdc',673451, '10-08-2019', 'porcon',
-           'American express', 220, null, null, null, null),
-           (30, 'tdc',6278821, '10-08-2019', 'sensar',
-           'American express', 108, null, null, null, null),
-           (31, 'transferencia',null, null, null,
-         null, null, null, 1142394, 'Banesco', 'Inversiones gol'),
-           (32, 'transferencia',null, null, null,
-       null, null, null, 3217771, 'Banesco', 'Mary snike'),
-         (33, 'efectivo',null, null, 'Pedro Perez',
-         null, null, null, null, null, null),
-         (34, 'efectivo',null, null, 'Ilan contreras',
-         null, null, null, null, null, null),
-         (35, 'efectivo',null, null, 'Frida Bermudez',
-         null, null, null, null, null, null),
-         (36, 'efectivo',null, null, 'Comex',
-         null, null, null, null, null, null),
-         (37, 'cheque',null, null, 'Invest ca',
-         null, null, 4214253, null, null, null),
-         (38, 'cheque',null, null,'Robert Camo',
-         null, null, 474211, null, null, null),
-         (39, 'cheque',null, null,'Manuel Cain',
-         null, null, 8321341, null, null, null),
-         (40, 'cheque',null, null, 'Hector Porras',
-         null, null, 14213, null, null, null);
-
+     
          INSERT INTO pago(
             id_pago, monto, id_orden, id_tipopago)
     VALUES
@@ -1328,17 +1307,7 @@ INSERT INTO ensam_pieza(
     (7, '10-10-2010', '10-10-2012', 2, 2, 7),
     (8, '10-10-2010', '10-10-2012', 3, 3, 1),
     (9, '10-10-2010', '10-10-2012', 4, 4, 3),
-    (10, '10-10-2010', '10-10-2012',5, 5, 5),
-    (11, '10-01-2017', '10-02-2017', 11, 1, 1),
-   (12, '20-02-2017', '20-03-2017', 6, 1, 2),
-   (13, '02-03-2017', '02-04-2017', 3, 1, 3),
-   (14, '10-04-2017', '10-05-2017', 4, 1, 4),
-   (15, '10-05-2017', '20-06-2017', 5, 5, 5),
-   (16, '10-10-2017', '10-11-2017', 1, 1, 6),
-   (17, '20-11-2017', '30-11-2017', 2, 2, 7),
-   (18, '01-12-2017', '20-12-2017', 3, 3, 1),
-   (19, '02-12-2017', '20-12-2017', 4, 4, 3),
-  (20, '20-12-2017', '30-12-2017',5, 5, 5);
+    (10, '10-10-2010', '10-10-2012',5, 5, 5);
 
    INSERT INTO pieza_prueba(
                 cod_piezapru, cod_pieza,cod_solicitud,id_estatus, cod_prueba)
@@ -1367,7 +1336,7 @@ INSERT INTO ensam_pieza(
             (7, 7, '08-08-2014', '11-06-2015',7 , 7),
             (8, 8, '08-08-2012', '12-08-2013',8 , 8),
             (9, 9, '08-08-2013', '08-04-2014',9 , 9),
-            (10,10, '08-08-2013','05-05-2014',10 ,10)
+            (10,10,'08-08-2013',  '05-05-2014',10 ,10),
 	    (11,1,'01-01-2017','30-01-2017', 16 , 1),
             (12,2,'02-01-2017','31-01-2017',16 , 2),
             (13,3,'03-01-2017','30-01-2017',16,3),
@@ -1433,6 +1402,3 @@ VALUES
 (13,9000,13,1),
 (14,9500,14,1),
 (15,10000,15,1);
-
-
- 
