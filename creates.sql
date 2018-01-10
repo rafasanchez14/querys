@@ -88,7 +88,7 @@ create table Solicitud
 create table Pieza(
   cod_pieza serial primary key,
   nombre_pieza varchar(50) not null,
-  desc_pieza varchar (80) not null
+  desc_pieza varchar (3000) not null
 
 );
 create table Inventario(
@@ -332,6 +332,3 @@ monto numeric(10,2),
 id_orden_cliente integer not null,
 id_tipopago integer not null
 );
-
-
-
